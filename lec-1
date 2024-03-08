@@ -3,7 +3,7 @@
 - 스터디 시간에 질문/코멘트
 
 배울 내용
-- 지도학습에서 강화학습으로
+- 지도학습 vs 강화학습
 - model-free 알고리즘: Q-learning, policy gradient, actor-critic
 - model-based 알고리즘: planning, sequence modeling
 - 탐색
