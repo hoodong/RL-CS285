@@ -1,3 +1,5 @@
+# Lecture 1. Introduction and cource overview
+
 공부 방법
 - 미리 강의를 듣고 여기에 간략히 정리
 - 스터디 시간에 질문/코멘트
