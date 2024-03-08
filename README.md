@@ -3,7 +3,7 @@
 - 강의자료 한글로 정리
 - Homework 풀이
 
-  ## 차례
+## 차례
 - Lecture 1: Introduction and Course Overview
 - Lecture 2: Supervised Learning of Behaviors
 - Lecture 3: PyTorch Tutorial
