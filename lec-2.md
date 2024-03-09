@@ -25,7 +25,7 @@
   - trail following as classification: Giusti 2016
   - imitation with a cheap robot: Rahmatizadeh 2017
 - 모델 개선
-  - 전체 히스토리 사용 (Markov 가정이 성립하지 않으므로)
+  - 전체 히스토리 사용 (Markov 가정이 성립하지 않는 경우)
   - 하지만 데이터가 많아지면 Causal confusion 문제가 발생할 수 있음 (원인과 결과를 구분하지 못함, de Hann 2019)
   - diffusion 모델: Chi 2023
   - latent 변수: Zhao 2023
