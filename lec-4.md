@@ -33,7 +33,8 @@
   $\theta^\star=\text{arg}\max\limits_{\theta} E_{\tau\sim p_\theta(\tau)}\left[ \sum\limits_t r(s_t,a_t) \right]$
 - finite horizon 경우  
   $\theta^\star=\text{arg}\max\limits_{\theta} \sum\limits_t E_{(s_t,a_t)\sim p_\theta (s_t,a_t)} r(s_t,a_t)$
-- infinite horizon 경우
+- infinite horizon 경우 ($T=\inf$)
+  
 
 ## 강화학습 알고리즘
 - 기본구조: 1.샘플생성(정책수행) -> 2.모델접합/리턴추정 -> 3.정책개선 (1,2,3을 반복)
