@@ -8,7 +8,8 @@
 - Markov 속성
 
 ## 정의
-- Markov chain: $\mathcal{M=\lbrace S,T \rbrace}$
+- Markov chain
+  - $\mathcal{M=\lbrace S,T \rbrace}$
   - $\mathcal{S}$: state space
   - $\mathcal{T}$: transition operator
   - 상태확률 $\mu_{t,i}=P(s_t=i)$과 천이확률 $\mathcal{T}\_{i,j}=P(s_{t+1}=i|s_t=j)$에 대해 $\mu_{t+1,i}=\sum_j \mathcal{T}\_{i,j}\cdot \mu_{t,i}$이 성립
