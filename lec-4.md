@@ -12,7 +12,7 @@
   - $\mathcal{M=\lbrace S,T \rbrace}$
   - $\mathcal{S}$: state space
   - $\mathcal{T}$: transition operator
-  - 상태확률 $\mu_{t,i}=P(s_t=i)$과 천이확률 $\mathcal{T}\_{i,j}=P(s_{t+1}=i|s_t=j)$에 대해 $\mu_{t+1,i}=\sum_j \mathcal{T}\_{i,j}\cdot \mu_{t,i}$이 성립
+  - 상태확률 $\mu_{t,i}=P(s_t=i)$과 천이확률 $\mathcal{T}\_{i,j}=p(s_{t+1}=i|s_t=j)$에 대해 $\mu_{t+1,i}=\sum_j \mathcal{T}\_{i,j}\cdot \mu_{t,i}$이 성립
   - 행렬식으로 나타내면 $\mu_{t+1}=\mathcal{T}\mu_{t}$
 - Markov decision process (MDP)
   - $\mathcal{M=\lbrace S,A,T,r \rbrace}$
@@ -24,14 +24,13 @@
   - $\mathcal{E}$: emission probability $p(o_t|s_t)$
 
 ## 강화학습의 목표
-- 에이전트의 정책 $\pi_\theta(a|s)$
-- 환경: $p(s'|s,a)$
-- 궤적(trajectory): 발생한 일련의 상태와 행동 $s_1,a_1,s_2,s_2,...,s_T,a_T$
-- 어떤 궤적이 일어날 확률은 초기상태 확률, 에이전트의 정책, 환경의 천이확률로 주어짐
-- $P(s_1,a_1,s_2,s_2,...,s_T,a_T)$  
-  $= P(s_1)P(a_1|s_1)P(s_2|s_1,a_1)P(a_2|s_1,a_1,s_2)P(s_3|s_1,a_1,s_2,a_2)...$ (연쇄율)  
-  $= P(s_1)P(a_1|s_1)P(s_2|s_1,a_1)P(a_2|s_2)P(s_3|s_2,a_2)...$ (Markov 성질)  
-  $= P(s_1)\prod\limits_{t=1}^{T}\pi_\theta(a_t|s_t)P(s_{t+1}|s_t,a_t)$
+- 궤적(trajectory): $\tau=s_1,a_1,s_2,s_2,...,s_T,a_T$
+- 어떤 궤적이 일어날 확률은 초기상태 확률 $p(s_1)$, 에이전트의 정책 $\pi_\theta(a|s)$, 환경의 천이확률 $p(s'|s,a)$로 주어짐
+- $p_\theta(\tau)=p_\theta(s_1,a_1,s_2,s_2,...,s_T,a_T)$  
+  $= p(s_1)p(a_1|s_1)p(s_2|s_1,a_1)p(a_2|s_1,a_1,s_2)p(s_3|s_1,a_1,s_2,a_2)...$ (연쇄율)  
+  $= p(s_1)\prod\limits_{t=1}^{T}\pi_\theta(a_t|s_t)p(s_{t+1}|s_t,a_t)$ (Markov 성질)
+- 강화학습의 목표는 (궤적에서 얻어지는) 누적 보상의 기대값을 최대화하는 정책을 찾는 것 (즉, 정책의 파라미터 $\theta$)
+  $\theta^\star=argmax_{\theta}E_{\tau\sim p_\theta(\tau)}\left[ \sum\limits_t(s_t,a_t) \right]$
 
 ## 
 - finite horizon 경우
