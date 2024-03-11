@@ -30,7 +30,7 @@
   $= p(s_1)p(a_1|s_1)p(s_2|s_1,a_1)p(a_2|s_1,a_1,s_2)p(s_3|s_1,a_1,s_2,a_2)...$ (연쇄율)  
   $= p(s_1)\prod\limits_{t=1}^{T}\pi_\theta(a_t|s_t)p(s_{t+1}|s_t,a_t)$ (Markov 성질)
 - 강화학습의 목표는 (궤적에서 얻어지는) 누적 보상의 기대값을 최대화하는 정책을 찾는 것 (즉, 정책의 파라미터 $\theta$)
-  $\theta^\star=argmax_{\theta}E_{\tau\sim p_\theta(\tau)}\left[ \sum\limits_t(s_t,a_t) \right]$
+  $\theta^\star=\text{arg}\max\limits_{\theta}E_{\tau\sim p_\theta(\tau)}\left[ \sum\limits_t(s_t,a_t) \right]$
 
 ## 
 - finite horizon 경우
