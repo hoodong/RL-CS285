@@ -18,7 +18,7 @@
   - $r$: reward function
 - patially observed Markov decision process: $\mathcal{M=\lbrace S,A,O,T,E,r \rbrace}$
   - $\mathcal{O}$: observation space
-  - $\mathcal{E}$: emission space
+  - $\mathcal{E}$: emission probability $p(o_t|s_t)$
 
 ## 강화학습의 목표
 
