@@ -14,10 +14,12 @@
   - $\mathcal{T}$: transition operator
   - 상태확률 $\mu_{t,i}=P(s_t=i)$과 천이확률 $\mathcal{T}\_{i,j}=P(s_{t+1}=i|s_t=j)$에 대해 $\mu_{t+1,i}=\sum_j \mathcal{T}\_{i,j}\cdot \mu_{t,i}$이 성립
   - 행렬식으로 나타내면 $\mu_{t+1}=\mathcal{T}\mu_{t}$
-- Markov decision process (MDP): $\mathcal{M=\lbrace S,A,T,r \rbrace}$
+- Markov decision process (MDP)
+  - $\mathcal{M=\lbrace S,A,T,r \rbrace}$
   - $\mathcal{A}$: action space
   - $r$: reward function
-- patially observed Markov decision process (POMDP): $\mathcal{M=\lbrace S,A,O,T,E,r \rbrace}$
+- patially observed Markov decision process (POMDP)
+  - $\mathcal{M=\lbrace S,A,O,T,E,r \rbrace}$
   - $\mathcal{O}$: observation space
   - $\mathcal{E}$: emission probability $p(o_t|s_t)$
 
