@@ -31,9 +31,7 @@
 - $P(s_1,a_1,s_2,s_2,...,s_T,a_T)$  
   $= P(s_1)P(a_1|s_1)P(s_2|s_1,a_1)P(a_2|s_1,a_1,s_2)P(s_3|s_1,a_1,s_2,a_2)...$ (연쇄율)  
   $= P(s_1)P(a_1|s_1)P(s_2|s_1,a_1)P(a_2|s_2)P(s_3|s_2,a_2)...$ (Markov 성질)  
-  $= P(s_1)\prod_{1}^{T}\pi_\theta(a_t|s_t)P(s_{t+1}|s_t,a_t)$
-- 참고: 조건부 확률의 연쇄율
-  - $P(A_1,A_2,...,A_n) = P(A_1)P(A_2|A_1)P(A_3|A_2,A_1)...P(A_n|A_1,...A_{n-1})$
+  $= P(s_1)\prod\limits_{t=1}^{T}\pi_\theta(a_t|s_t)P(s_{t+1}|s_t,a_t)$
 
 ## 
 - finite horizon 경우
