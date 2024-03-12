@@ -18,9 +18,8 @@
 - 데이터의 iid 가정이 성립하지 않음 (의사결정 문제에서는 현재 행동이 다음 상태에 영향을 미치기 때문)
 - 따라서 작은 오류가 누적되어 데이터 분포가 달라짐 (전문가는 실수하지 않음)
 - 이것을 distributional shift 문제라고 함 (학습 데이터와 테스트 데이터의 분포가 다름)
-- 그러면 기존 지도학습에서는 distributional shift가 발생하지 않나요?
-- 참고문헌: Ross 2011
-
+- distributional shift에 대한 더 자세한 설명: https://d2l.ai/chapter_linear-classification/environment-and-distribution-shift.html
+  
 ## 해결방법
 - 데이터 수집방법 개선
   - trail following as classification: Giusti 2016
