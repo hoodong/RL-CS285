@@ -37,3 +37,8 @@
 - 알고리즘 개선
   - DAgger: Dataset Aggregation (Ross 2011)
  
+## 참고자료
+- imatation learning 구현
+  https://github.com/HumanCompatibleAI/imitation
+  
+ 
