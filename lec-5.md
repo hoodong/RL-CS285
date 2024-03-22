@@ -1,4 +1,4 @@
-# Lecture 4. Introduction to Reinforcement Learning
+# Lecture 5. Policy Gradients
 
 ## 질문
 - p4: $\sum_i$는 현재정책에서 얻은 모든 샘플에 대해 더한다는 의미!
