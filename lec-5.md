@@ -9,5 +9,9 @@
 - p13: POMDP에서 policy gradient를 그대로 사용해도 될까?
 - p14: policy gradient의 문제점은 무엇인가? 분산이 큰 이유는? (무엇의 분산인가?)
 
+  ##
+  $$J(\theta')=E_{\tau\sim_{\theta'}(\tau)}\left[ r(\tau) \right]
+  = E_{\tau\sim p_{\theta}(\tau)}\left[ r(\tau)\frac{p_{\theta'}(\tau)}{p_{\theta}(\tau)} \right] $$  
+
 
 
