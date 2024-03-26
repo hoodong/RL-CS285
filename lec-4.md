@@ -6,7 +6,7 @@
 - p12: Markov chain on (s,a)
   $  p(s_{t+1},a_{t+1}|s_t,a_t) $
   $ = p(a_{t+1}|s_t,a_t)p(s_{t+1}|s_t,a_t,a_t+1) $ by chain rule 
-  $ = p(a_{t+1}|s_t)p(s_{t+1}|s_t,a_t)$ by markov propery  
+  $ = p(a_{t+1}|s_t)p(s_{t+1}|s_t,a_t) $ by markov propery  
 - p14: 무한 지평선 문제에서 상태-행동 확률은 수렴하는가? 수렴하려면 어떤 조건이 필요한가?
 - p20: 모델 f는 다음상태를 예측한다? (입력: 현재상태/행동, 출력: 다음상태)
 - p20: 역전파를 이용해 정책을 학습한다? (f와 r을 통해) 그러면 목적함수는?
