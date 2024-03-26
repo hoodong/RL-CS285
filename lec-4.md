@@ -7,7 +7,7 @@
   $p(s_{t+1},a_{t+1}|s_t,a_t) = p(a_{t+1}|s_t,a_t)p(s_{t+1}|s_t,a_t,a_t+1)$ by chain rule  
   $= p(a_{t+1}|s_t)p(s_{t+1}|s_t,a_t)$ by markov propery
 - p13: state-action marginal $p_\theta(s_t,a_t)$ 
-- p14: infinite horizon 경우에 Markov chain의 수렴 조건은? 1.ergodicity, 2.aperiodic
+- p14: infinite horizon 경우에 Markov chain의 수렴 조건은? 1.ergodicity, 2.aperiodic 
 - p20: 모델 f는 다음상태를 예측한다? (입력: 현재상태/행동, 출력: 다음상태)
 - p20: 역전파를 이용해 정책을 학습한다? (f와 r을 통해) 그러면 목적함수는?
 - p21: 실시간인 경우 샘플 생성에 시간이 많이 걸린다(시뮬레이션인 경우는 훨씬 빠르다)
