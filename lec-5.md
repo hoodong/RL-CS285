@@ -11,7 +11,7 @@
 
   ##
   $$J(\theta')=E_{\tau\sim p_{\theta'}(\tau)}\left[ r(\tau) \right]
-  = E_{\tau\sim p_{\theta}(\tau)}\left[ r(\tau)\frac{p_{\theta'}(\tau)}{p_{\theta}(\tau)} \right] $$  
+  = E_{\tau\sim p_{\theta}(\tau)}\left[ \frac{p_{\theta'}(\tau)}{p_{\theta}(\tau)} r(\tau) \right] $$  
 
 
 
