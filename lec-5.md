@@ -10,7 +10,7 @@
 - p14: policy gradient의 문제점은 무엇인가? 분산이 큰 이유는? (무엇의 분산인가?)
 - p24: off-policy policy gradient
 
-$ J(\theta') \approx J(\theta') $
+$$ J(\theta') \approx J(\theta) $$
  
   $$J(\theta')=E_{\tau\sim p_{\theta'}(\tau)}\left[ r(\tau) \right]
   = E_{\tau\sim p_{\theta}(\tau)}\left[ \frac{p_{\theta'}(\tau)}{p_{\theta}(\tau)} r(\tau) \right] $$
