@@ -18,8 +18,7 @@
   $ J(\theta') = J(\theta') + (\theta'-\theta)^T {\theta}J(\theta) $
   $\approx$
 - p36: natural policy gradient 이해?
-
-  $ J(\theta') \approx J(\theta') + (\theta'-\theta)^T \nabla_{\theta}J(\theta) $ 
+$ J(\theta') \approx J(\theta') + (\theta'-\theta)^T \nabla_{\theta}J(\theta) $ 
   
 
 
