@@ -12,6 +12,8 @@
 
 $$ J(\theta') \approx J(\theta) + (\theta'-\theta)^T \nabla_{\theta}J(\theta) $$
 
+$$ J(\theta') \approx J(\theta) + (\theta'-\theta)^T \nabla_{\theta}J(\theta) $$
+
   $$J(\theta')=E_{\tau\sim p_{\theta'}(\tau)}\left[ r(\tau) \right]
   = E_{\tau\sim p_{\theta}(\tau)}\left[ \frac{p_{\theta'}(\tau)}{p_{\theta}(\tau)} r(\tau) \right] $$
 
