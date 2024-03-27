@@ -19,7 +19,8 @@ $$ J(\theta') \approx J(\theta) + (\theta'-\theta)^T \nabla_{\theta}J(\theta) $$
 
 - p35: 그림에서 Vanilla policy gradient의 문제점?  
 - p35: constrained optimization 문제 유도과정?  
-  1st order Taylor expansion 
+  1st order Taylor expansion
+  
   $$ J(\theta') \approx J(\theta) + (\theta'-\theta)^T \nabla_{\theta}J(\theta) $$
   
 - p36: natural policy gradient 이해?
