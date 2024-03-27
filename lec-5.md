@@ -12,7 +12,9 @@
   $$J(\theta')=E_{\tau\sim p_{\theta'}(\tau)}\left[ r(\tau) \right]
   = E_{\tau\sim p_{\theta}(\tau)}\left[ \frac{p_{\theta'}(\tau)}{p_{\theta}(\tau)} r(\tau) \right] $$
 - p35: 그림에서 Vanilla policy gradient의 문제점?
+- p35: constrained optimization 문제 유도과정?
 - p36: natural policy gradient 이해?
+  $\color{yellow}J(\theta')$
 
 
 
