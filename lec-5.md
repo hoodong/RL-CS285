@@ -12,7 +12,7 @@
   $$J(\theta')=E_{\tau\sim p_{\theta'}(\tau)}\left[ r(\tau) \right]
   = E_{\tau\sim p_{\theta}(\tau)}\left[ \frac{p_{\theta'}(\tau)}{p_{\theta}(\tau)} r(\tau) \right] $$
 - p35: 그림에서 Vanilla policy gradient의 문제점?
-  - 파라미터 간의 스케일이 맞지 않음
+  - 파라미터 간의 스케일이 다르다!
   - 파라미터 1은 정책이 많이 변하고 파라미터 2는 정책이 적게 변함 
 - p35: constrained optimization 문제 유도과정?  
   - 1st order Taylor expansion of $J(\theta')$ at $\theta$  
