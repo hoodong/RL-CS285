@@ -8,6 +8,6 @@
     $V^{\pi}(s_t)=E_{a_t\sim\pi_{\theta}(a_t|s_t)}\left[Q^{\pi}(s_t,a_t)\right]$ : total reward from  $s_t$   
 - p6: Q 함수의 근사
   - $Q^{\pi}(s_t,a_t)$  
-    $= r(s_t,a_t)+E\left[V^{\pi}(s_{t+1})\right],\, s_{t+1}\sim p(s_{t+1}|s_t,a_t)$    
+    $= r(s_t,a_t)+E\left[V^{\pi}(s_{t+1})\right],\; s_{t+1}\sim p(s_{t+1}|s_t,a_t)$    
     $\approx r(s_t,a_t) + V^{\pi}(s_{t+1})$ : $s_{t+1}$는 현재 궤적에서 얻어짐 
 
