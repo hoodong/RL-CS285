@@ -13,5 +13,5 @@
     $\approx r(s_t,a_t) + V^{\pi}(s_{t+1})$, $\quad s_{t+1}$ 는 현재 궤적에서 얻어짐
 - p15: policy gradient에 discound factor를 적용할 때 option 1과 option 2의 차이?
 - p15: 실제로는 option 1을 사용하는 이유는?
-- p21: off-policy actor-critic을 위해 바꿔야 하는 부분은?
+- p21: off-policy actor-critic을 위해 기존 online 알고리즘에서 바꿔야 하는 부분은?
 
