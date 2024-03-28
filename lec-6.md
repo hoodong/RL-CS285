@@ -10,8 +10,7 @@
   - $Q^{\pi}(s_t,a_t)=r(s_t,a_t)+\sum\limits_{t'=t+1}^{T}E_{\pi_{\theta}}\left[r(s_t',a_t'|s_t,a_t)\right]$  
     $= r(s_t,a_t)+E_{s_{t+1}\sim p(s_{t+1}|s_t,a_t)}\left[V^{\pi}(s_{t+1})\right]$  
     $\approx r(s_t,a_t) + V^{\pi}(s_{t+1})$
-    $$
-    Q^{\pi}(s_t,a_t)&=r(s_t,a_t)+\sum\limits_{t'=t+1}^{T}E_{\pi_{\theta}}\left[r(s_t',a_t'|s_t,a_t)\right]
+    $Q^{\pi}(s_t,a_t)&=r(s_t,a_t)+\sum\limits_{t'=t+1}^{T}E_{\pi_{\theta}}\left[r(s_t',a_t'|s_t,a_t)\right]
     &= r(s_t,a_t)+E_{s_{t+1}\sim p(s_{t+1}|s_t,a_t)}\left[V^{\pi}(s_{t+1})\right]  
     &\approx r(s_t,a_t) + V^{\pi}(s_{t+1})
-    $$  
+    $  
