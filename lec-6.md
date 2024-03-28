@@ -19,6 +19,6 @@
 - p22: off-policy 가치망 업데이트에서 $\hat{Q}_{\phi}^{\pi}(s_i^{'},a_i^{'})$을 쓸 때
   왜 $a_i^{'}$를 현재정책에서 정하는지?
   - $Q^\pi(s,a)=r(s,a)+\gamma V^\pi(s')$  
-    $\quad\quad=r(s,a)+\gamma E_[Q^\pi(s',a')], a'\sim \pi(a'|s')$
+    $\qquad\qquad=r(s,a)+\gamma E_[Q^\pi(s',a')], a'\sim \pi(a'|s')$
    
 
