@@ -18,7 +18,8 @@
   - $a_i$ did not come from latest ${\pi}_{\theta}$
 - p22: off-policy 가치망 업데이트에서 $\hat{Q}_{\phi}^{\pi}(s_i^{'},a_i^{'})$을 쓸 때
   왜 $a_i^{'}$를 현재정책에서 정하는지?
-  - target of $\hat{Q}_{\phi}^{\pi}$: $y_i = r_i(s_i,a_i) + \gamma\hat{V}^{\pi}_{\phi}(s_i^{'})$      
+  - target of $\hat{Q}_{\phi}^{\pi}$: $y_i = r_i(s_i,a_i) + \gamma\hat{V}^{\pi}_{\phi}(s_i^{'})$
+         
     $ = r_i(s_i,a_i) + \gamma \hat{Q}^{\pi}_{\phi}(s_i^{'},a_i^{'})$      
     where $a_i^{'}\sim{\pi}_{\theta}(a_i^{'}|s_i^{'})$
    
