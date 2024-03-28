@@ -14,7 +14,10 @@
 - p15: policy gradient에 discound factor를 적용할 때 option 1과 option 2의 차이?
 - p15: 실제로는 option 1을 사용하는 이유는?
 - p21: off-policy actor-critic을 위해 기존 online 알고리즘에서 바꿔야 하는 두 군데는?
+  - replay buffer에서 가져온 transition $(s_i,a_i,r_i,s_i^{'})$는 old actor에서 얻어진 것
+  - "$a_i$ did not come from latest ${\pi}_{\theta}!$
 - p22: off-policy 가치망 업데이트에서 $\hat{Q}_{\theta}^{\pi}(s_i^{'},a_i^{'})$을 쓸 때
   왜 $a_i^{'}$를 현재정책에서 정하는지?
+  - off policy
    
 
