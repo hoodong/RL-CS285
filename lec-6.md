@@ -14,5 +14,6 @@
 - p15: policy gradient에 discound factor를 적용할 때 option 1과 option 2의 차이?
 - p15: 실제로는 option 1을 사용하는 이유는?
 - p21: off-policy actor-critic을 위해 기존 online 알고리즘에서 바꿔야 하는 두 군데는?
-- p22: value ft. 대신 Q ft.을 쓸 때 왜 a'를 현재정책으로 정하는지? 
+- p22: 가치망 업데이트에서 가치함수 $\hat{V}_{\theta}^{\pi}(s_i^')$ 대신
+  Q 함수 $\hat{Q}_{\theta}^{\pi}(s_i^',a_i^')$을 쓸 때 왜 $a_i^'$를 현재정책에서 정하는지? 
 
