@@ -21,7 +21,9 @@
   - target of $\hat{Q}^{\pi}_{\phi}$
     
     $ y_i = r_i(s_i,a_i) + \gamma\hat{V}^{\pi}_{\phi}(s_i^{'})$
+    
     $ = r_i(s_i,a_i) + \gamma \hat{Q}^{\pi}_{\phi}(s_i^{'},a_i^{'})$
+    
     where $a_i^{'}\sim{\pi}_{\theta}(a_i^{'}|s_i^{'})$
    
 
