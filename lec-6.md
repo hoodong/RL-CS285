@@ -7,4 +7,4 @@
   - state value function   
     $V^{\pi}(s_t)=E_{a_t\sim\pi_{\theta}(a_t|s_t)}\left[Q^{\pi}(s_t,a_t)\right]$ : total reward from  $s_t$   
 - p6: Q 함수의 근사
-  - $Q^{\pi}(s_t,a_t) = r(s_t,a_t)+E_{s_{t+1}\sim p(s_{t+1}|s_t,a_t)}\left[V_\{pi}(s_{t+1})\right]$
+  - $Q^{\pi}(s_t,a_t) = r(s_t,a_t)+E_{s_{t+1}\sim p(s_{t+1}|s_t,a_t)}\left[V^{\pi}(s_{t+1})\right]$
