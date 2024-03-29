@@ -21,7 +21,7 @@ $J(\theta')$
   - 1st order Taylor expansion  
     $J({\theta}') \approx J(\theta) + (\theta'-\theta)^T \nabla_{\theta}J(\theta) $
 - p36: natural policy gradient 이해?  
-  - $\max\limits_{\theta'}\quad s.t. ||\theta'-\theta||^2 le \eplsilon$
+  - $\max\limits_{\theta'}\quad s.t. ||\theta'-\theta||^2 \le \epsilon$
    
   
 
