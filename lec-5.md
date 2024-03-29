@@ -15,8 +15,8 @@
   - 파라미터 간의 스케일이 다르다!
   - 파라미터 1은 정책이 많이 변하고 파라미터 2는 정책이 적게 변함 
 - p35: constrained optimization 문제 유도과정?  
-  - 1st order Taylor expansion
-    $$ J(\theta') \approx J(\theta) + (\theta'-\theta)^T \nabla{\theta}J(\theta) $$
+  - 1st order Taylor expansion  
+    $ J(\theta') \approx J(\theta) + (\theta'-\theta)^T \nabla{\theta}J(\theta) $
 - p36: natural policy gradient 이해?
    
   
