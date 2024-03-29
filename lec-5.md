@@ -8,6 +8,9 @@
 - p11: Gaussian 정책에서 $f$는 평균벡터이고 $\Sigma$는 공분산 행렬인가?
 - p13: POMDP에서 policy gradient를 그대로 사용해도 될까?
 - p14: policy gradient의 문제점은 무엇인가? 분산이 큰 이유는? (무엇의 분산인가?)
+
+$ J(\theta') \approx J(\theta) + (\theta'-\theta)^T \nabla{\theta}J(\theta) $
+  
 - p24: off-policy policy gradient
   $$J(\theta')=E_{\tau\sim p_{\theta'}(\tau)}\left[ r(\tau) \right]
   = E_{\tau\sim p_{\theta}(\tau)}\left[ \frac{p_{\theta'}(\tau)}{p_{\theta}(\tau)} r(\tau) \right] $$
