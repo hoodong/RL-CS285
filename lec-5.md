@@ -22,6 +22,7 @@ $J(\theta')$
     $J({\theta}') \approx J(\theta) + (\theta'-\theta)^T \nabla_{\theta}J(\theta) $
 - p36: natural policy gradient 이해?
   - $max_{\{\theta'}} ()$
+  - \text{arg}\max\limits_{\theta}
    
   
 
