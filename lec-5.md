@@ -10,7 +10,6 @@
 - p14: policy gradient의 문제점은 무엇인가? 분산이 큰 이유는? (무엇의 분산인가?)
 
 $J(\theta')$
-$J({\theta}') \approx J(\theta) + (\theta'-\theta)^T \nabla{\theta}J(\theta) $
   
 - p24: off-policy policy gradient
   $$J(\theta')=E_{\tau\sim p_{\theta'}(\tau)}\left[ r(\tau) \right]
@@ -20,8 +19,7 @@ $J({\theta}') \approx J(\theta) + (\theta'-\theta)^T \nabla{\theta}J(\theta) $
   - 파라미터 1은 정책이 많이 변하고 파라미터 2는 정책이 적게 변함 
 - p35: constrained optimization 문제 유도과정?  
   - 1st order Taylor expansion
-  - 
-  - $ J(\theta') \approx J(\theta) + (\theta'-\theta)^T \nabla{\theta}J(\theta) $
+    $J({\theta}') \approx J(\theta) + (\theta'-\theta)^T \nabla{\theta}J(\theta) $
 - p36: natural policy gradient 이해?
    
   
