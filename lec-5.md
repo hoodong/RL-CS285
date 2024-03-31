@@ -26,7 +26,7 @@
   - Lagrange multiplier 이용!
   - 유도과정이 잘 설명된 논문
     - van Heeswijk 2022, Natural Policy Gradients In Reinforcement Learning Explained
-- p36: Fish information의 의미?
+- p36: Fish information matrix의 의미와 KL-divergence와의 관계?
     
    
   
