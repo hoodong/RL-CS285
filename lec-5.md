@@ -16,7 +16,7 @@ $J(\theta')$
   = E_{\tau\sim p_{\theta}(\tau)}\left[ \frac{p_{\theta'}(\tau)}{p_{\theta}(\tau)} r(\tau) \right] $$
 - p35: 그림에서 Vanilla policy gradient의 문제점?
   - 파라미터 간의 민감도가 다르다!
-  - 파라미터 1은 정책이 많이 변하고 파라미터 2는 정책이 적게 변함 
+  - 파라미터 1 방향은 빨리 변하고, 파라미터 2 방향은 천천히 변함 
 - p35: constrained optimization 문제 유도과정?  
   - 1st order Taylor expansion  
     $J({\theta}') \approx J(\theta) + (\theta'-\theta)^T \nabla_{\theta}J(\theta) $
