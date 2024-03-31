@@ -25,6 +25,7 @@ $J(\theta')$
     $\max\limits_{\theta'}J(\theta')\quad s.t. ||\theta'-\theta||^2 \le \epsilon$
   - natural policy gradient
     $\max\limits_{\theta'}J(\theta')\quad s.t. D(\pi_\theta'-\pi_\theta) \le \epsilon$
+- p36: 주어진 constraint optimization 문제에서 natural policy gradient의 해를 구하는 방법? (Lagrange multiplier 이용!) 
    
   
 
