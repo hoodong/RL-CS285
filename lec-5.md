@@ -8,12 +8,9 @@
 - p11: Gaussian 정책에서 $f$는 평균벡터이고 $\Sigma$는 공분산 행렬인가?
 - p13: POMDP에서 policy gradient를 그대로 사용해도 될까?
 - p14: policy gradient의 문제점은 무엇인가? 분산이 큰 이유는? (무엇의 분산인가?)
-
-$J(\theta')$
-  
-- p24: off-policy policy gradient
+- p24: off-policy policy gradient  
   $$J(\theta')=E_{\tau\sim p_{\theta'}(\tau)}\left[ r(\tau) \right]
-  = E_{\tau\sim p_{\theta}(\tau)}\left[ \frac{p_{\theta'}(\tau)}{p_{\theta}(\tau)} r(\tau) \right] $$
+  = E_{\tau\sim p_{\theta}(\tau)}\left[ \frac{p_{\theta'}(\tau)}{p_{\theta}(\tau)} r(\tau) \right] $$  
 - p35: 그림에서 Vanilla policy gradient의 문제점?
   - 파라미터 간의 민감도가 다르다!
   - 파라미터 1 방향은 빨리 변하고, 파라미터 2 방향은 천천히 변함 
@@ -29,6 +26,7 @@ $J(\theta')$
   - Lagrange multiplier 이용!
   - 유도과정이 잘 설명된 논문
     - van Heeswijk 2022, Natural Policy Gradients In Reinforcement Learning Explained
+- p36: Fish information의 의미?
     
    
   
