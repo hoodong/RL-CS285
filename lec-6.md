@@ -13,6 +13,7 @@
     $\approx r(s_t,a_t) + V^{\pi}(s_{t+1})$, $\quad s_{t+1}$ 는 현재 궤적에서 얻어짐
 - p15: policy gradient에 discound factor를 적용할 때 option 1과 option 2의 차이?
 - p15: 실제로는 option 1을 사용하는 이유는?
+- p20: on-policy 가정을 제거하려는 이유는? (on-policy actor critic의 단점?)
 - p21: off-policy actor-critic을 위해 기존 online 알고리즘에서 바꿔야 하는 두 군데는?
   - replay buffer에서 가져온 transition $(s_i,a_i,r_i,s_i^{'})$는 old actor에서 얻어진 것  
   - $a_i$ did not come from latest ${\pi}_{\theta}$
@@ -24,5 +25,7 @@
   - $\nabla_\theta J(\theta)\approx$
     $\frac{1}{N}\sum_i\nabla_\theta\log\pi_\theta(a_i^\pi)\hat{A}^\pi(s_i,a_i^\pi)$,
     $\quad a_i^\pi\sim \pi_\theta(a|s_i)$
+  - critic (1~3 라인): 리플레이 버퍼에서 가져온 샘플로 Q 함수를 업데이트
+  - actor (4~5 라인): 
    
 
