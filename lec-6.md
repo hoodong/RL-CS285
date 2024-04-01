@@ -16,9 +16,10 @@
 - p21: off-policy actor-critic을 위해 기존 online 알고리즘에서 바꿔야 하는 두 군데는?
   - replay buffer에서 가져온 transition $(s_i,a_i,r_i,s_i^{'})$는 old actor에서 얻어진 것  
   - $a_i$ did not come from latest ${\pi}_{\theta}$
-- p22: off-policy 가치망 업데이트에서 $\hat{Q}_{\phi}^{\pi}(s_i^{'},a_i^{'})$을 쓸 때
+- p22: 알고리즘 3라인 가치망 업데이트에서 $\hat{Q}_{\phi}^{\pi}(s_i^{'},a_i^{'})$을 쓸 때
   왜 $a_i^{'}$를 현재정책에서 정하는지?
   - $Q^\pi(s,a)=r(s,a)+\gamma V^\pi(s')$  (?)  
     $\qquad\qquad=r(s,a)+\gamma E\left[Q^\pi(s',a')\right], a'\sim \pi(a'|s')$
+- p23: 알고리즘 5라인 gradient 계산에서 
    
 
