@@ -27,7 +27,7 @@
   - $\nabla_\theta J(\theta)\approx$
     $\frac{1}{N}\sum_i\nabla_\theta\log\pi_\theta(a_i^\pi)\hat{A}^\pi(s_i,a_i^\pi)$,
     $\quad a_i^\pi\sim \pi_\theta(a|s_i)$
-  - critic (1~3 라인): 리플레이 버퍼에서 가져온 샘플로 Q 함수를 업데이트
+  - critic (1~3 라인): 리플레이 버퍼에서 가져온 샘플로 Q 함수 업데이트
   - actor (4~5 라인): 현재 정책에서 샘플링한 행동으로 정책 업데이트
    
 
