@@ -21,6 +21,6 @@
   - $Q^\pi(s,a)=r(s,a)+\gamma V^\pi(s')$  (?)  
     $\qquad\qquad=r(s,a)+\gamma E\left[Q^\pi(s',a')\right], a'\sim \pi(a'|s')$
 - p23: (알고리즘 5라인 gradient 계산) 행동을 현재정책에서 샘플링하는 이유는?
-  - $\nabla_\theta J(\theta)\approx\frac{1}{N}\sum_i\nabla_\theta\log\pi_\theta(a_i^\pi)$\hat(A)^\pi(s_i,a_i^\pi,\quad a_i^\pi\sim \pi_\theta(a|s_i)$
+  - $\nabla_\theta J(\theta)\approx\frac{1}{N}\sum_i\nabla_\theta\log\pi_\theta(a_i^\pi)$\hat{A})^\pi(s_i,a_i^\pi,\quad a_i^\pi\sim \pi_\theta(a|s_i)$
    
 
