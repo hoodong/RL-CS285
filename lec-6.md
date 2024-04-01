@@ -40,10 +40,9 @@
     - 현재 정책을 샘플링해서 정책 그래디언트 계산
   - 즉, off-policy version은 critic과 actor의 업데이트에 리플레이 버퍼 $\mathcal{R}$을 이용
       - $(s_i,a_i,s_i^{'},r_i) \in \mathcal{R}$
-      - critic 업데이트: $s_i,a_i,s_i^{'},r_i$ 이용
-        $\quad a_i^{'}\sim\pi_\theta(s_i^{'},a_i^{'})$  
+      - critic 업데이트: $a_i^{'}\sim\pi_\theta(s_i^{'},a_i^{'})$  
         Q target: $\quad y_i=r_i+\gamma\hat{Q} _{\phi}^{\pi}(s_i^{'},a_i^{'})$
-      - actor 업데이트: $s_i$, $a_i^\pi$  
+      - actor 업데이트: $s_i$, $a_i^\pi\sim\pi_\theta(a,a_i^{'})$  
         policy gradient: $\quad \frac{1}{N}\sum_i\nabla_\theta\log\pi_\theta(a_i,s_i)\hat{A}^\pi(s_i,a_i)$  
         
 
