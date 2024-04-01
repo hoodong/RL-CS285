@@ -15,10 +15,10 @@
 - p15: 실제로는 option 1을 사용하는 이유는?
 - p20: on-policy 가정을 제거해서 off-policy로 동작시키려는 이유는? (on-policy actor critic의 단점?)
 - p21: off-policy actor-critic을 위해 기존 알고리즘에서 바꿔야 하는 두 군데는?
-  - 3라인: 가치함수의 타겟
-  - 5라인: 
-  - replay buffer에서 가져온 transition $(s_i,a_i,r_i,s_i^{'})$는 old actor에서 얻어진 것  
-  - $a_i$ did not come from latest ${\pi}_{\theta}$
+  - 3라인: 가치함수 타겟 $y_i=r_i+\gamma\hat{V}_\phi^\pi(s_i^')$
+  - 5라인: 정책 그래디언트
+  - 왜냐하면 replay buffer에서 가져온 transition $(s_i,a_i,r_i,s_i^{'})$은 old actor에서 얻어진 것  
+  - 즉, $a_i$ did not come from latest ${\pi}_{\theta}$
 - p22: (알고리즘 3라인 가치망 업데이트) $\hat{Q}_{\phi}^{\pi}(s_i^{'},a_i^{'})$을 쓸 때
   왜 $a_i^{'}$를 현재정책에서 정하는지?
   - $Q^\pi(s,a)=r(s,a)+\gamma V^\pi(s')$  (?)  
