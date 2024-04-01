@@ -40,6 +40,7 @@
       - $(s_i,a_i,s_i^{'},r_i) \in \mathcal{R}$
       - critic 업데이트에서 Q target
         $y_i=r_i+\gamma\hat{Q}_\phi^{\pi}(s_i^{'},a_i^{'})$
+        
         $a_i^{'}\sim\pi_\theta(a_i^{'}|s_i^{'})$
         
         $y_i=r_i+\gamma\hat{Q}_\phi^{\pi}(s_i^{'},a_i^{'}),\quad a_i^{'}\sim\pi_\theta(a_i^{'}|s_i^{'})$    
