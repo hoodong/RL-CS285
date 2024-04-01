@@ -42,8 +42,8 @@
         $y _i=r _i+\gamma\hat{Q} _\phi^{\pi}(s _i^{'},a _i^{'})$,
         where $a _i^{'}\sim\pi _\theta(a _i^{'}|s _i^{'})$
       - actor 업데이트에서 policy gradient         
-        $\quad \frac{1}{N}\sum_i\nabla_\theta\log\pi_\theta(a_i,s_i)\hat{A}^\pi(s_i,a_i)$,
-        where $\quad a_i^\pi\sim\pi_\theta(a|s_i)$  
+        $\frac{1}{N}\sum_i\nabla_\theta\log\pi_\theta(a_i,s_i)\hat{A}^\pi(s_i,a_i)$,
+        where $a_i^\pi\sim\pi_\theta(a|s_i)$  
         
 
    
