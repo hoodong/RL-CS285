@@ -27,10 +27,8 @@
   - $\nabla_\theta J(\theta)\approx$
     $\frac{1}{N}\sum_i\nabla_\theta\log\pi_\theta(a_i^\pi)\hat{A}^\pi(s_i,a_i^\pi)$,
     $\quad a_i^\pi\sim \pi_\theta(a|s_i)$
-  - critic (1~3 라인): 리플레이 버퍼에서 가져온 샘플로 Q 함수 업데이트  
-    
+  - critic (1~3 라인): 리플레이 버퍼에서 가져온 샘플로 Q 함수 업데이트      
   - actor (4~5 라인): 현재 정책에서 샘플링한 행동으로 정책 업데이트  
-
 - p23: online actor-critic 알고리즘의 on-policy와 off-policy 버전을 정리하면
   - on-policy version (p20)
     - 새로운 샘플이 얻어지면 이 샘플을 이용해 가치함수와 정책을 업데이트
@@ -43,7 +41,6 @@
       - critic 업데이트에서 Q target
         $y_i=r_i+\gamma\hat{Q}$
         $y_i=r_i+\gamma\hat{Q}_\phi^{\pi}(s_i^{'},a_i^{'})$,
-        
         $\quad a_i^{'}\sim\pi_\theta(a_i^{'}|s_i^{'})$      
       - actor 업데이트에서 policy gradient         
         $\quad \frac{1}{N}\sum_i\nabla_\theta\log\pi_\theta(a_i,s_i)\hat{A}^\pi(s_i,a_i)$,
