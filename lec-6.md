@@ -1,4 +1,4 @@
-# Lecture 6. Policy Gradients
+# Lecture 6. Actor-Critic Algorithms
 
 ## 질문
 - p5: 가치함수 정의
