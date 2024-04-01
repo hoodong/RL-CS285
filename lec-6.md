@@ -40,8 +40,7 @@
       - $(s_i,a_i,s_i^{'},r_i) \in \mathcal{R}$
       - critic 업데이트에서 Q target  
         $y_i=r_i+\gamma\hat{Q}_\phi^{\pi}(s_i^{'},a_i^{'})$
-        
-        $a_i^{'}\sim\pi_\theta(a_i^{'}|s_i^{'})$
+        where $a_i^{'}\sim\pi_\theta(a_i^{'}|s_i^{'})$
       - actor 업데이트에서 policy gradient         
         $\quad \frac{1}{N}\sum_i\nabla_\theta\log\pi_\theta(a_i,s_i)\hat{A}^\pi(s_i,a_i)$,
         $\quad a_i^\pi\sim\pi_\theta(a|s_i)$  
