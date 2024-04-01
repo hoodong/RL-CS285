@@ -38,9 +38,9 @@
     - 새로운 샘플이 얻어지면 리플레이 버퍼에 저장
     - 리플레이 버퍼를 샘플링해서 Q 함수를 업데이트
     - 현재 정책을 샘플링해서 정책 그래디언트 계산
-  - 즉, off-policy version은 critic과 actor의 업데이트에 리플레이 버퍼를 이용
-      - critic 업데이트: 리플레이 버퍼에서 $s_i,a_i,s_i^{'},r_i$,
-        현재 정책에서 $a_i^{'}\sim\pi_\theta(s_i^{'},a_i^{'})$ 이용  
+  - 즉, off-policy version은 critic과 actor의 업데이트에 리플레이 버퍼 $\mathcal{R}$을 이용
+      - critic 업데이트: $(s_i,a_i,s_i^{'},r_i) \in \mathcal{R}$,
+        $a_i^{'}\sim\pi_\theta(s_i^{'},a_i^{'})$ 이용  
         Q target: $\quad y_i=r_i+\gamma\hat{Q} _{\phi}^{\pi}(s_i^{'},a_i^{'})$
       - actor 업데이트: 리플레이 버퍼에서 $s_i$, 현재 정책에서 $a_i^\pi$ 이용  
         policy gradient: $\quad \frac{1}{N}\sum_i\nabla_\theta\log\pi_\theta(a_i,s_i)\hat{A}^\pi(s_i,a_i)$  
