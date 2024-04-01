@@ -32,6 +32,6 @@
 - p23: online actor-critic 알고리즘의 on-policy와 off-policy 버전을 정리하면
   - on-policy version (p20) 
     1.take action $a\sim \pi_\theta(a|s)$, get $(s,a,s',r)$
-    2.update $\hat{V}_{\phi}^{\pi}$ using target $r+\gamma \hat{V}\limits_pi$ 
+    2.update $\hat{V}_{\phi}^{\pi}$ using target $r+\gamma \hat{V}\phi^\pi(s')$ 
    
 
