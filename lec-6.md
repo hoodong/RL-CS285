@@ -39,8 +39,8 @@
   - 즉, off-policy version은 critic과 actor의 업데이트에 리플레이 버퍼 $\mathcal{R}$을 이용
       - $(s_i,a_i,s_i^{'},r_i) \in \mathcal{R}$
       - critic 업데이트에서 Q target  
-        $y_i=r_i+\gamma\hat{Q}_\phi^{\pi}(s_i^{'},a_i^{'})$
-        where $a_i^{'}\sim\pi_\theta(a_i^{'}|s_i^{'})$
+        $y _i=r _i+\gamma\hat{Q} _\phi^{\pi}(s _i^{'},a _i^{'})$
+        where $a _i^{'}\sim\pi _\theta(a _i^{'}|s _i^{'})$
       - actor 업데이트에서 policy gradient         
         $\quad \frac{1}{N}\sum_i\nabla_\theta\log\pi_\theta(a_i,s_i)\hat{A}^\pi(s_i,a_i)$,
         $\quad a_i^\pi\sim\pi_\theta(a|s_i)$  
