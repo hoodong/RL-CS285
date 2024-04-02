@@ -29,7 +29,9 @@
 - p36: Fish information matrix의 의미와 KL-divergence와의 관계?
   - 참고: Natural Policy Gradient 논문 리뷰 https://rlwithme.tistory.com/5 
   - 피셔 정보 행렬을 scroe 함수의 공분산으로 정의
-  - 즉 음의 log-likelihood의 Hessian의 기댓값이므로 곡률 행렬로 해석이 가능함(?)
+  - 즉 음의 log-likelihood의 Hessian의 기댓값이므로 곡률 행렬로 해석이 가능함 (?)
+  - Fish information matrix = Hessian of KL-divergence (?)
+    
     
    
   
