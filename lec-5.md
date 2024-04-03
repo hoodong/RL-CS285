@@ -12,7 +12,7 @@
   $$J(\theta')=E_{\tau\sim p_{\theta'}(\tau)}\left[ r(\tau) \right]
   = E_{\tau\sim p_{\theta}(\tau)}\left[ \frac{p_{\theta'}(\tau)}{p_{\theta}(\tau)} r(\tau) \right] $$
 - p25: off-policy gradient 유도 과정
-  - $\prod_{t'=1}^{t}$에서 future actions don't affect current weight 의미?
+  - $\prod\limits_{t'=1}^{t}$에서 future actions don't affect current weight 의미?
   - $\prod_{t''=t}^{t'}$ 부분을 무시하면 policy iteration algorithm이 되는 이유?
 - p26: off-policy gradient 유도 과정
 - p35: 그림에서 Vanilla policy gradient의 문제점?
