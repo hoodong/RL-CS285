@@ -11,6 +11,9 @@
   - $Q^{\pi}(s_t,a_t)$  
     $= r(s_t,a_t)+E\left[V^{\pi}(s_{t+1})\right], \quad s_{t+1}\sim p(s_{t+1}|s_t,a_t)$    
     $\approx r(s_t,a_t) + V^{\pi}(s_{t+1})$, $\quad s_{t+1}$ 는 현재 궤적에서 얻어짐
+- p8: 가치함수 $$ 학습 (MC)
+  - 데이터: ${(s_{i,t},y_i,t))}, \quad y_i,t=\sum\limits_{t'=t}^{T}r(s_{i,t'},a_{i,t'}$
+  - 손실함수: $L(\phi)=\frac{1}{2}\sum_i||\hat{V} _\phi^\pi(s_i)-y_i||^2$ 
 - p15: policy gradient에 discound factor를 적용할 때 option 1과 option 2의 차이?
 - p15: 실제로는 option 1을 사용하는 이유는?
 - p20: on-policy 가정을 제거해서 off-policy로 동작시키려는 이유는? (on-policy actor critic의 단점?)
