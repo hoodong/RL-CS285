@@ -11,7 +11,8 @@
   - $Q^{\pi}(s_t,a_t)$  
     $= r(s_t,a_t)+E\left[V^{\pi}(s_{t+1})\right], \quad s_{t+1}\sim p(s_{t+1}|s_t,a_t)$    
     $\approx r(s_t,a_t) + V^{\pi}(s_{t+1})$, $\quad s_{t+1}$ 는 현재 궤적에서 얻어짐
-- p8: nearby states take on similar value (generalization)
+- p8: function approximation
+  - nearby states take on similar value (generalization)
 - p8, p9: 가치함수 $\hat{V}_{\phi}^{\pi}$ 학습
   - 데이터: $\lbrace (s_{i,t},y_{i,t}) \rbrace$  
   - 손실함수: $L(\phi)=\frac{1}{2}\sum_i||\hat{V} _\phi^\pi(s_i)-y_i||^2$
