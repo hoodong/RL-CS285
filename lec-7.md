@@ -1,3 +1,6 @@
-# Lecture 6. Actor-Critic Algorithms
+# Lecture 7. Value Function Methods
+
+## 질문
+
 
 
