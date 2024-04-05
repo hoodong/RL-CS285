@@ -7,7 +7,7 @@
   2.정책 개선:
   $\pi\leftarrow$ greedy policy for $A^\pi(s,a)$
 - p6: Sutton 교재(4.3절)에서는 Q(s,a) 대신 V(s)를 사용했음
-  - 환경의 dynamic을 알면 $V(s)$로 부터 $Q(s)$를 계산할 수 있으므로
+  - 환경의 dynamic을 알면 V(s)로 부터 Q(s,a)를 계산할 수 있으므로
   
 - p7: value iteration  
   1.행동가치 업데이트  
