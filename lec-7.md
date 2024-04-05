@@ -2,16 +2,10 @@
 
 ## 질문
 - p6: policy iteration  
-  1.
-  $V_\pi(s)\leftarrow r(s,\pi(s))+\gamma E\left[V_\pi(s')\right], \quad s'\sim p(s'|s,\pi(s))$  
+  1.$V_\pi(s)\leftarrow r(s,\pi(s))+\gamma E\left[V_\pi(s')\right], \quad s'\sim p(s'|s,\pi(s))$  
   2.
   $\pi\leftarrow \pi'$ where $\pi'$ is the greedy policy for the current action value
-  $\pi'(a_t|s_t)=1$ if $a_t=\arg\max_{a_t} A^\pi(s_t,a_t)$, otherwise $\pi'(a_t|s_t)=0$
-
-  $\begin{cases}
-    1,1\\
-    0,0\\
-   \end{cases}$
+  
 - p7: value iteration
   $$
 
