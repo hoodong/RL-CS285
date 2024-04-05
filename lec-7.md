@@ -9,8 +9,8 @@
   
 - p7: value iteration
   1.행동가치 업데이트  
-  $Q(s,a)\leftarrow r(s,a)+\gamma E[V(s')]$
+  $Q(s,a)\leftarrow r(s,a)+\gamma E[V(s')]$  
   2.상태가치 업데이트
-  $V(s)\leftarrow \arg_a Q(s,a)$
+  $V(s)\leftarrow \arg_a Q(s,a)$  
 
 
