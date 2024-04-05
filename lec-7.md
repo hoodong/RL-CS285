@@ -5,7 +5,8 @@
   1.정책 평가  
   $\quad V_\pi(s)\leftarrow r(s,\pi(s))+\gamma E\left[V_\pi(s')\right], \quad s'\sim p(s'|s,\pi(s))$$  
   2.정책 개선  
-  $\quad \pi\leftarrow \pi'$ where $\pi'$ is the greedy policy for the action value
+  $\quad \pi\leftarrow \pi'$ where $\pi'$ is the greedy policy for the advantage function $A^\pi (s_t,a_t)$
+- p6: dynamic을 알고 있으면 $Q$$V(s)$
   
 - p7: value iteration  
   1.행동가치 업데이트  
