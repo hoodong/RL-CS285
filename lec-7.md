@@ -7,6 +7,11 @@
   2.
   $\pi\leftarrow \pi'$
   $\pi'(a_t|s_t)=1$ if $a_t=\arg\max_{a_t} A^\pi(s_t,a_t)$, otherwise $\pi'(a_t|s_t)=0$
+
+  $\begin{cases}
+    1,1\\
+    0,0\\
+   \end{cases}$
 - p7: value iteration
   $$
 
