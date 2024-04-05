@@ -8,8 +8,7 @@
   $\pi\leftarrow$ greedy policy for $A^\pi(s,a)$
   - step 1,2를 반복
 - p6: Sutton 교재(4.3절)에서는 Q(s,a) 대신 V(s)를 사용했음  
-  - 환경의 dynamic을 알면 V(s)에서 Q(s,a)를 계산할 수 있으므로
-  
+  - 환경의 dynamic을 알면 V(s)에서 Q(s,a)를 계산할 수 있으므로  
 - p7: value iteration  
   1.행동가치 업데이트  
   $\quad Q(s,a)\leftarrow r(s,a)+\gamma E[V(s')]$  
