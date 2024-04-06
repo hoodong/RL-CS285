@@ -10,6 +10,10 @@
   - 환경의 dynamic을 알면 $V(s)$에서 $Q(s,a)$를 계산할 수 있으므로  
 - p7: value iteration    
   $Q(s,a)\leftarrow r(s,a)+\gamma E[V(s')]$    
-  $V(s)\leftarrow \max_a Q(s,a)$  
+  $V(s)\leftarrow \max_a Q(s,a)$
+- p11: transition dynamics
+  - 알 때: $V(s)\leftarrow \max_a r(s,a)+\gamma E[V(s')]$
+  - 모를 때: $Q(s,a)\leftarrow r(s,a)+\gamma\max_a' Q(s',a')$
+  
 
 
