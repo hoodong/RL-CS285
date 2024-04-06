@@ -13,7 +13,7 @@
   - $V(s)\leftarrow \max_a Q(s,a)$
 - p7: value iteration  
   - $V(s)\leftarrow \max_{a} \left( r(s,a)+\gamma E[V(s')] \right)$
-  - data: (s,a,r) 
+  - data: $(s,a,r)$
 - p11: Q-iteration
   - transition dynamics을 모를 때 $E[V(s')]$을 $\max_{a'} Q(s',a')$로 근사하면   
   - $Q(s,a)\leftarrow r(s,a)+\gamma\max\limits_{a'} Q(s',a')$
