@@ -12,8 +12,8 @@
   $Q(s,a)\leftarrow r(s,a)+\gamma E[V(s')]$    
   $V(s)\leftarrow \max_a Q(s,a)$
 - p11: transition dynamics
-  - 알 때: $V(s)\leftarrow \max_a \left[ r(s,a)+\gamma E[V(s')] \right]$
-  - 모를 때: $Q(s,a)\leftarrow r(s,a)+\gamma\max_a' Q(s',a')$
+  - 알 때: $V(s)\leftarrow \max_{a} \left[ r(s,a)+\gamma E[V(s')] \right]$
+  - 모를 때: $Q(s,a)\leftarrow r(s,a)+\gamma\max_{a'} Q(s',a')$
   
 
 
