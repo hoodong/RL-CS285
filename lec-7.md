@@ -14,7 +14,7 @@
 - p11: transition dynamics
   - transition dynamics을 알 때
     $V(s)\leftarrow \max\limits_{a} \left[ r(s,a)+\gamma E[V(s')] \right]$
-  - transition dynamics을 모를 때: $E[V(s')]$을 $\max\limits_{a'} Q(s',a')$로 근사
+  - transition dynamics을 모를 때: $E[V(s')]$을 $\max\limits_{a'} Q(s',a')$로 근사  
     $Q(s,a)\leftarrow r(s,a)+\gamma\max\limits_{a'} Q(s',a')$
   
 
