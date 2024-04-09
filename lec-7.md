@@ -17,7 +17,7 @@
   - $Q(s,a)\leftarrow r(s,a)+\gamma\max\limits_{a'} Q(s',a')$, data: $(s,a,s',r)$
 - p15: Q-iteraion이 off-policy인 이유는?
 - p18: Q-learning에서 exploration을 하는 이유는?
-- 
+- p18: eplilon-greedy와 Boltzmann exploration의 의미는?
 
 
   
