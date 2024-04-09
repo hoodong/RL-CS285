@@ -16,6 +16,8 @@
   - transition dynamics을 모를 때 $E[V(s')]$을 $\max_{a'} Q(s',a')$로 근사하면   
   - $Q(s,a)\leftarrow r(s,a)+\gamma\max\limits_{a'} Q(s',a')$, data: $(s,a,s',r)$
 - p15: Q-iteraion이 off-policy인 이유는?
+- p18: Q-learning에서 exploration을 하는 이유는?
+- 
 
 
   
