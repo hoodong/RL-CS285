@@ -18,8 +18,8 @@
 - p15: Q-iteraion이 off-policy인 이유는?
 - p18: Q-learning에서 exploration을 하는 이유는?
 - p18: eplilon-greedy와 Boltzmann exploration의 의미는?
-- value iteration은 contraction 연산이므로 수렴이 보장됨
-
+- value iteration은 contraction 연산이므로 수렴이 보장됨 (Tabular case)
+- Tabular case가 아닌 경우 수렴이 보장되지 않음
   
 
 
