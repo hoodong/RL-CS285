@@ -2,7 +2,7 @@
 - 2024.3 - 2024.8
 - 미리 강의를 듣고 여기에 간략히 정리
 - 스터디 시간에 질문/코멘트
-- Homework 풀이
+- Homework 풀이?
 
 ## 차례
 - Lecture 1: Introduction and Course Overview
