@@ -24,7 +24,7 @@
   - online Q-learning
   - DQN
   - fitted Q-iteration
-- double Q-learning
+- p22: double Q-learning
   - max 연산으로 인한 overestimation을 줄여주는 원리는?
 - Q-learning에서 continuous actions?
   - option 1: stochastic optimization?
