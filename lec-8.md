@@ -25,6 +25,9 @@
   - DQN
   - fitted Q-iteration
 - double Q-learning이 max 연산에 의한 overestimation을 줄여주는 이유는?
-- continuous action에서 Q-learning?
+- Q-learning에서 continuous actions?
+  - option 1:
+  - option 2: ANF
+  - option 3: DDPG
 
      
