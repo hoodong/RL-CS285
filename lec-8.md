@@ -28,6 +28,6 @@
 - Q-learning에서 continuous actions?
   - option 1: stochastic optimization?
   - option 2: normalized advantage function (ANF)
-  - option 3: DDPG
+  - option 3: deep deterministic policy gradient (DDPG)
 
      
