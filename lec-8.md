@@ -6,7 +6,7 @@
   -  슬라이드에는 $\frac{\partial y}{\partial \phi}$ 항이 빠져있는 이유는?
   -  semi-gradient descent?
 - p3: "no gradient through target value"가 무슨 뜻인지?
-  -  gradient에 $\frac{\partial y}{\partial \phi}$ 가 없음
+  -  loss의 gradient에 $\frac{\partial y}{\partial \phi}$ 가 없음
 - p4: online Q-learning의 2가지 문제점
   - 샘플의 상관도가 높다.
   - 타겟값이 계속 변한다.
