@@ -19,7 +19,7 @@
   - process 1: data collection
   - process 2: target update
   - process 3: Q-function regression
-- p17:general Q-learning 관점에서 다음 3가지 방식의 차이점은?
+- p17: general Q-learning 관점에서 다음 3가지 방식의 차이점은?
   - online Q-learning
   - DQN
   - fitted Q-iteration
