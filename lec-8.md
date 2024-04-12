@@ -15,6 +15,10 @@
   - 위 2 = 아래 1
   - 위 3,4 = 아래 2,3,4
 - p13: Polyak averaging과 같은 altenative target network을 쓰는 이유는?
-- 
+- p17: 다음 3개의 차이점은?
+  - online Q-learning
+  - DQN
+  - fitted Q-iteration
+    
 
      
