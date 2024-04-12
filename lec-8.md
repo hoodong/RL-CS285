@@ -25,7 +25,7 @@
   - DQN
   - fitted Q-iteration
 - double Q-learning
-  - max 연산에 의한 overestimation을 줄여주는 이유는?
+  - max 연산으로 인한 overestimation을 줄여주는 원리는?
 - Q-learning에서 continuous actions?
   - option 1: stochastic optimization?
   - option 2: normalized advantage function (ANF, GU 2016)
