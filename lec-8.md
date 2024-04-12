@@ -24,9 +24,8 @@
   - online Q-learning
   - DQN
   - fitted Q-iteration
-- p22: double Q-learning
-  - max 연산으로 인한 overestimation을 줄여주는 원리는?
-- Q-learning에서 continuous actions?
+- p22: double Q-learning의 원리를 쉽게 설명하면?
+- p27: Q-learning에서 continuous actions?
   - option 1: stochastic optimization?
   - option 2: normalized advantage function (ANF, GU 2016)
   - option 3: deep deterministic policy gradient (DDPG, Lillicrap 2016)
