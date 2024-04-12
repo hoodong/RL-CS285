@@ -14,6 +14,7 @@
   - 위 1 = 아래 5
   - 위 2 = 아래 1
   - 위 3,4 = 아래 2,3,4
-
+- p13: Polyak averaging과 같은 altenative target network을 쓰는 이유는?
+- 
 
      
