@@ -3,7 +3,7 @@
   -  $L=\frac{1}{2}(Q_\phi-y)^2$
   -  $\frac{\partial L}{\partial \phi} =$
      $(Q_\phi-y)(\frac{\partial Q_\phi}{\partial \phi}-\frac{\partial y}{\partial \phi})$
-  -  슬라이드에는 $\frac{\partial y}{\partial \phi}$ 항이 빠져있음
+  -  슬라이드에는 $\frac{\partial y}{\partial \phi}$ 항이 빠져있음 (semi-gradient method?)
 - p3: "no gradient through target value"가 무슨 뜻인지?
 - p4: correlated samples이 왜 문제가 되는지? 학습에 어떤 영향을 주는지?
 - 
