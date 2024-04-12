@@ -7,7 +7,7 @@
 - p3: "no gradient through target value"가 무슨 뜻인지?
 - p4: correlated samples이 왜 문제가 되는지? 학습에 어떤 영향을 주는지?
 - p11: target network를 가지는 Q-learning에서 N과 K의 차이는?
-  - N은 데이터셋 수집 및 리플레이 버퍼에 저장하는 횟수
+  - N은 데이터 수집하고 리플레이 버퍼에 저장하는 횟수
   - K는 리플레이 버퍼에서 데이터 샘플링하는 횟수
 
 
