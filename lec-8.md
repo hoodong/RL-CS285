@@ -24,6 +24,6 @@
   - online Q-learning
   - DQN
   - fitted Q-iteration
-    
+- double Q-learning이 max 연산에 의한 overestimation을 줄여주는 이유는?
 
      
