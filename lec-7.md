@@ -10,11 +10,12 @@
 - p7: value iteration  
   - Bellman optimality equation을 이용: $V(s) = \max_{a}Q(s,a)$
   - 여기서 $Q(s,a)=r(s,a)+\gamma E[V(s')]$ 이므로  
-  - $V(s)\leftarrow \max_{a} \left( r(s,a)+\gamma E[V(s')] \right),\quad s'\sim p(s'|s,a)$, data: $(s,a,r)$  
+  - $V(s)\leftarrow \max_{a} \left( r(s,a)+\gamma E[V(s')] \right),\quad s'\sim p(s'|s,a)$    
   - transition dynamics $p(s'|s,a)$을 알면 $E[V(s')]$ 계산이 가능함  
 - p11: Q-iteration
   - transition dynamics을 모를 때 $E[V(s')]$을 $\max_{a'} Q(s',a')$로 근사하면   
-  - $Q(s,a)\leftarrow r(s,a)+\gamma\max\limits_{a'} Q(s',a')$, data: $(s,a,s',r)$
+  - $Q(s,a)\leftarrow r(s,a)+\gamma\max\limits_{a'} Q(s',a')$
+  - value iteration에서는 data가 $(s,a,r)$, Q-iteration에서는 data가 $(s,a,s',r)$
 - p15: Q-iteraion이 off-policy인 이유는?
 - p18: Q-learning에서 exploration을 하는 이유는?
 - p18: eplilon-greedy와 Boltzmann exploration의 의미는?
