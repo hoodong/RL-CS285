@@ -2,7 +2,7 @@
 
 - $V(s)$와 $Q(s,a)$의 관계 (lec-6, p6)
   - $V(s) = E_a[Q(s,a)]$, where $a\sim \pi(a|s)$
-  - $Q(s,a) = r(s,a) + E_s'[V(s')]$, where $s'\sim p(s'|s,a)$
+  - $Q(s,a) = r(s,a) + E_{s'}[V(s')]$, where $s'\sim p(s'|s,a)$
 - p6: policy iteration  
   1.정책 평가:
   $V_\pi(s)\leftarrow r(s,\pi(s))+\gamma E\left[V_\pi(s')\right], \quad s'\sim p(s'|s,\pi(s))$   
