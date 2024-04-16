@@ -18,7 +18,7 @@
     - $p(s'|s,a)$를 알면 $E[V(s')]$ 계산 가능
     - $p(s'|s,a)$를 모르면? Q-iteration
 - p11: Q-iteration
-  - value iteration에서 $E[V(s')]$을 $\max_{a'} Q(s',a')$로 근사하면   
+  - value iteration에서 $E[V(s')]$을 $\max_{a'} Q(s',a')$로 근사하면(?)   
   - $Q(s,a)\leftarrow r(s,a)+\gamma\max\limits_{a'} Q(s',a')$
   - value iteration에서는 data가 $(s,a,r)$, Q-iteration에서는 data가 $(s,a,s',r)$
 - p15: Q-iteraion이 off-policy인 이유는?
