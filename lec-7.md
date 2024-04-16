@@ -25,7 +25,8 @@
 - p18: Q-learning에서 exploration이 필요한 이유를 쉽게 설명하면?
 - p18: eplilon-greedy와 Boltzmann exploration의 의미는?
 - p22: value iteration은 contraction 연산이므로 수렴이 보장됨 (Tabular case 경우)
-- p23: Tabular case가 아닌 경우 수렴이 보장되지 않음
+- p23: Tabular case가 아닌 경우 수렴이 보장되지 않음 (eg. fitted value iteration)
+  - fitting 연산이 추가됨
   
 
 
