@@ -26,7 +26,7 @@
 - p18: eplilon-greedy와 Boltzmann exploration의 의미는?
 - p22: value iteration은 contraction 연산이므로 수렴이 보장됨 (Tabular case)
 - p23: fitted value iteration은 수렴이 보장되지 않음 (non-tabular case)
-  - fitting 연산이 추가됨
+  - value iteration & fitting은 contraction 연산이 아님
   
 
 
