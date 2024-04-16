@@ -15,7 +15,8 @@
   - $Q(s,a)=r(s,a)+\gamma E[V(s')]$
   - 위 두식을 합치면
     - $V(s)\leftarrow \max_{a} \left( r(s,a)+\gamma E[V(s')] \right),\quad s'\sim p(s'|s,a)$    
-    - $p(s'|s,a)$를 알면 $E[V(s')]$ 계산이 가능함  
+    - $p(s'|s,a)$를 알면 $E[V(s')]$ 계산 가능
+    - $p(s'|s,a)$를 모르면?
 - p11: Q-iteration
   - transition dynamics을 모를 때 $E[V(s')]$을 $\max_{a'} Q(s',a')$로 근사하면   
   - $Q(s,a)\leftarrow r(s,a)+\gamma\max\limits_{a'} Q(s',a')$
