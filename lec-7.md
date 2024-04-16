@@ -1,10 +1,13 @@
 # Lecture 7. Value Function Methods
 
+- 가치함수 $V(s)$와 Q 함수 $Q(s,a)$의 관계 (lec-6, p6)
+  - $V(s) = E[Q(s,a)]$, where $a\sim \pi(a|s)$
+  - $Q(s,a) = r(s,a) + E[V(s')]$, where $s'\sim p(s'|s,a)$
 - p6: policy iteration  
   1.정책 평가:
   $V_\pi(s)\leftarrow r(s,\pi(s))+\gamma E\left[V_\pi(s')\right], \quad s'\sim p(s'|s,\pi(s))$   
   2.정책 개선:
-  $\pi\leftarrow$ greedy policy for $A^\pi(s,a)$  
+  $\pi\leftarrow$ greedy policy for $A^\pi(s,a)$
 - p6: Sutton 교재(4.3절)에서는 $Q(s,a)$ 대신 $V(s)$를 사용했음  
   - 환경의 dynamic을 알면 $V(s)$에서 $Q(s,a)$를 계산할 수 있으므로 
 - p7: value iteration  
