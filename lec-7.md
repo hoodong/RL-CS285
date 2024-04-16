@@ -1,6 +1,6 @@
 # Lecture 7. Value Function Methods
 
-- 가치함수 $V(s)$와 Q 함수 $Q(s,a)$의 관계 (lec-6, p6)
+- $V(s)$와 $Q(s,a)$의 관계 (lec-6, p6)
   - $V(s) = E[Q(s,a)]$, where $a\sim \pi(a|s)$
   - $Q(s,a) = r(s,a) + E[V(s')]$, where $s'\sim p(s'|s,a)$
 - p6: policy iteration  
