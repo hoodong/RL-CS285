@@ -12,7 +12,7 @@
     - 환경의 dynamic을 알면 $V(s)$에서 $Q(s,a)$를 계산할 수 있으므로 
 - p7: value iteration
   - $V(s) = \max_{a}Q(s,a)$ (Bellman optimality equation)
-  - $Q(s,a)=r(s,a)+\gamma E[V(s')]$ (relation bw Q and V)
+  - $Q(s,a)=r(s,a)+\gamma E[V(s')]$ (relation b/w Q and V)
   - 위 두식을 합치면
     - $V(s)\leftarrow \max_{a} \left( r(s,a)+\gamma E[V(s')] \right),\quad s'\sim p(s'|s,a)$    
     - $p(s'|s,a)$를 알면 $E[V(s')]$ 계산 가능
