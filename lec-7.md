@@ -10,11 +10,12 @@
   $\pi\leftarrow$ greedy policy for $A^\pi(s,a)=Q^\pi(s,a)-V^\pi(s)$
 - p6: Sutton 교재(4.3절)에서는 $Q(s,a)$ 대신 $V(s)$를 사용했음  
   - 환경의 dynamic을 알면 $V(s)$에서 $Q(s,a)$를 계산할 수 있으므로 
-- p7: value iteration  
-  - Bellman optimality equation을 이용: $V(s) = \max_{a}Q(s,a)$
-  - 여기서 $Q(s,a)=r(s,a)+\gamma E[V(s')]$ 이므로  
-  - $V(s)\leftarrow \max_{a} \left( r(s,a)+\gamma E[V(s')] \right),\quad s'\sim p(s'|s,a)$    
-  - $p(s'|s,a)$를 알면 $E[V(s')]$ 계산이 가능함  
+- p7: value iteration
+  - $V(s) = \max_{a}Q(s,a)$ (Bellman optimality equation)
+  - $Q(s,a)=r(s,a)+\gamma E[V(s')]$
+  - 위 두식을 합치면
+    - $V(s)\leftarrow \max_{a} \left( r(s,a)+\gamma E[V(s')] \right),\quad s'\sim p(s'|s,a)$    
+    - $p(s'|s,a)$를 알면 $E[V(s')]$ 계산이 가능함  
 - p11: Q-iteration
   - transition dynamics을 모를 때 $E[V(s')]$을 $\max_{a'} Q(s',a')$로 근사하면   
   - $Q(s,a)\leftarrow r(s,a)+\gamma\max\limits_{a'} Q(s',a')$
