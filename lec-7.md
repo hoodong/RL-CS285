@@ -1,9 +1,9 @@
 # Lecture 7. Value Function Methods
 
 - $V(s)$와 $Q(s,a)$의 관계 (lec-6, p6)
-  - $V(s) = E_a[Q(s,a)],\quad a\sim \pi(a|s)$
   - $V(s) = E_{a\sim \pi(a|s)}[Q(s,a)]$
   - $Q(s,a) = r(s,a) + \gamma E_{s'}[V(s')],\quad s'\sim p(s'|s,a)$
+  - $Q(s,a) = r(s,a) + \gamma E_{s'\sim p(s'|s,a)}[V(s')]$
 - p6: policy iteration  
   - 정책 평가:
   $V_\pi(s)\leftarrow r(s,\pi(s))+\gamma E\left[V_\pi(s')\right], \quad s'\sim p(s'|s,\pi(s))$   
