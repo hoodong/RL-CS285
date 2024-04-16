@@ -13,7 +13,7 @@
 - p7: value iteration  
   - Bellman optimality equation을 이용: $V(s) = \max_{a}Q(s,a)$
   - 여기서 $Q(s,a)=r(s,a)+\gamma E[V(s')]$ 이므로  
-  - $V(s)\leftarrow \max_{a} \left( r(s,a)+\gamma E[V(s')] \right),\quad s'\sim p(s'|s,a)$    
+  - $V(s)\leftarrow \max_{a} r(s,a)+\gamma E[V(s')],\quad s'\sim p(s'|s,a)$    
   - transition dynamics $p(s'|s,a)$을 알면 $E[V(s')]$ 계산이 가능함  
 - p11: Q-iteration
   - transition dynamics을 모를 때 $E[V(s')]$을 $\max_{a'} Q(s',a')$로 근사하면   
