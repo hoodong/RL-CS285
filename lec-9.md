@@ -11,3 +11,4 @@
   - $J(\theta) = E_{\tau\sim p_{\theta'}(\tau)}[V^{\pi_\theta}(s_0)]$
 - p5: 최종 식을 말로 쉽게 표현하면?
   - $J(\theta')-J(\theta)=E_{\tau\sim p_{\theta'}[\sum_t \gamma^t A^{\pi_\theta} (s_t,a_t)]$
+  - $J(\theta')-J(\theta)=E_{\tau\sim p_\theta'} \left[ \sum_t \gamma^t A^{\pi_\theta} (s_t,a_t)\right]$
