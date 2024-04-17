@@ -15,7 +15,7 @@
 - p5: 아래 식을 쉽게 설명하면?  
   - $J(\theta')-J(\theta)=E_{\tau\sim p_\theta'} \left[ \sum_t \gamma^t A^{\pi_\theta} (s_t,a_t)\right]$
   - p4 질문과 마찬가지로 advantage는 new policy를 따르고, trajectory는 old policy를 따른다는 것이 무슨 뜻인지?
-  - importance sampling의 개념으로 설명할 수 있는 것 같음?
+    혹시 importance sampling 개념?
   - 즉, old policy의 advantage를 new policy의 advantage로 환산?
 - p6: distribution mismatch
   - 근사: $J(\theta')-J(\theta)\approx\bar{A}(\theta')$
