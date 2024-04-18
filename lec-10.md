@@ -15,7 +15,7 @@
   - open-loop와 closes-loop의 차이?
 - 환경의 transition dynamic을 아는 경우
   - deterministic case?
-    $a_1,...a_T=\arg\max\limits_{a1,...,a_T}\sum_t=1^T r(s_t,a_t)$ s.t. $s_{t+1}=f(s_t,a_t)$
+    $a_1,...a_T=\arg\max\limits_{a_1,...,a_T}\sum_{t=1}^T r(s_t,a_t)$ s.t. $s_{t+1}=f(s_t,a_t)$
   - stochastic open-loop case?
   - stochastic closed-loop case?
 - prediction은 주어진 정책의 가치함수를 찾는 것(정책 평가), control은 최적의 정책을 찾은 것
