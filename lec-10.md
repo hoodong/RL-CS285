@@ -12,14 +12,14 @@
   - planning?
     - (Sutton 8.1) any computational process that takes a model as input and produces or improves a policy for interacting with the modeled environment
   - control과 planning의 차이?
-  - open-loop와 closes-loop의 차이?
+  - prediction과 control의 차이?
+  - open-loop와 closes-loop의 차이?  
 - 환경의 transition dynamic을 아는 경우
   - deterministic case?  
   - stochastic open-loop case?
   - stochastic closed-loop case?
-- prediction은 주어진 정책의 가치함수를 찾는 것(정책 평가), control은 최적의 정책을 찾은 것
-
-
+- stochastic 인 경우에 환경/정책 중에 어떤 것이 random? 둘 다?
+- deterministic인 경우는 왜 open-loop와 closed-loop로 나누지 않는지? 
 - open loop methods
   - random shooting
   - cross-entropy method (CEM)
