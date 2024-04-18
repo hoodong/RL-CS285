@@ -13,18 +13,19 @@
   - deterministic case?
   - stochastic open-loop case?
   - stochastic closed-loop case?
-- 용어
-  - open-loop와 clodes-loop의 차이?
-  - control과 planning 뜻은?
-- stochastic optimization?
-  - random shooting method
+- prediction은 주어진 정책의 가치함수를 찾는 것(정책 평가), control은 최적의 정책을 찾은 것
+- planning의 뜻?
+  - (Sutton 8.1) any computational process that takes a model as input and produces or improves a policy for interacting with the modeled environment
+- control과 planning의 차이?
+- open-loop와 clodes-loop의 차이?
+- open loop methods
+  - random shooting
   - cross-entropy method (CEM)
-  - open-loop planning과 stochastic optimization의 관계는?
-  - MCTC도 stochastic optimization에 포함되는가?
+  - Monte Carlo tree search (MCTS)
+  - linear quadratic regulator (LQR)
 - trajectory optimization이 무엇인가?
 - shooting method와 collocation의 차이?
 - LQR이 무엇인가? (linear quadratic regulator)
-  - 최적제어(optimal control) 이론의 하나
-  - 시스템의 상태방정식을 구하고, 성능 척도를 정하고, 리카티 미분방정식을 푼다.
-  - LQR + 칼만 필터를 LQG (linear quadratic Gaussian)이라고 한다.
-  - LQR is a well-known method that provides optimally controlled feedback gains to enable the closed-loop stable and high performance design of systems.
+  - 최적제어 문제: 물리적인 제약조건을 만족하면서 성능지표 또는 목적함수를 최적화하도록 동적 시스템(dynamic system)의 제어변수을 결정하는 문제
+  - linear: 시스템이 선형, quadratic: 목적함수가 2차함수, regulator: 시스템 상태를 0으로 만드는 제어기
+  - (chatgpt3.5) LQR은 시스템의 상태를 조절하여 원하는 목표를 달성하는 제어기를 설계하는 방법 중 하나로서, 시스템 모델링/성능 지표 정의/최적제어 입력 계산/피드백 제어기 설계 의 단계를 거침 
