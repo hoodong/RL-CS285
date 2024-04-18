@@ -24,4 +24,6 @@
 - trajectory optimization이 무엇인가?
 - shooting method와 collocation의 차이?
 - LQR이 무엇인가? (linear quadratic regulator)
-  - optimal control에서 사용하는 방법
+  - 최적제어 이론의 하나
+  - 시스템의 상태방정식을 구하고, 성능 척도를 정하고, 리카티 미분방정식을 푼다.
+  - LQR + 칼만 필터를 LQG (linear quadratic Gaussian)이라고 한다.
