@@ -32,6 +32,11 @@
   - (chatgpt3.5) LQR은 시스템의 상태를 조절하여 원하는 목표를 달성하는 제어기를 설계하는 방법 중 하나로서, 시스템 모델링/성능 지표 정의/최적제어 입력 계산/피드백 제어기 설계 의 단계를 거침
 - CEM은 무엇인가? (wikipedia)
   - a Monte Carlo method for importance sampling and optimization
-  - the method approximates the optimal importance sampling estimator by repeating two phases
-    1.draw a sample from a probability distribution.
-    2.minimize the cross-entropy between this distribution and a target distribution to produce a better sample in the next iteration.
+  - 알고리즘
+    - step 1: obtain N samples from current sampling distribution
+    - step 2: evaluate objective function at sampled points
+    - step 3: sort X by objective function values in descending order
+    - step 4: update parameters of sampling distribution via elite samples
+    - repeat step 1 to step 4 until stopping criterion
+  - 이 방법이 어떻게 cross-entropy를 최소화 할까?
+  - importance sampling이 어디서 사용되는 걸까? 
