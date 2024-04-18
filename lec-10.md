@@ -8,7 +8,7 @@
 - trajectory optimization
 
 ## 질문
-- 10장은 dynamic을 알 때 행동을 결정하는 방법에 대해
+- 10장은 dynamic을 알 때 행동을 결정하는 방법에 대해  
   11장은 dynamic을 모를 때 이것을 학습하는 방법에 대해
 - dynamic을 알 때 세 가지 분류
   - deterministic case?
