@@ -26,7 +26,12 @@
   - linear quadratic regulator (LQR)
 - trajectory optimization이 무엇인가?
 - shooting method와 collocation의 차이?
-- LQR이 무엇인가?
+- LQR은 무엇인가?
   - 최적제어 문제: 물리적인 제약조건을 만족하면서 성능지표 또는 목적함수를 최적화하도록 동적 시스템(dynamic system)의 제어변수을 결정하는 문제
   - linear: 시스템이 선형, quadratic: 목적함수가 2차함수, regulator: 시스템 상태를 0으로 만드는 제어기
-  - (chatgpt3.5) LQR은 시스템의 상태를 조절하여 원하는 목표를 달성하는 제어기를 설계하는 방법 중 하나로서, 시스템 모델링/성능 지표 정의/최적제어 입력 계산/피드백 제어기 설계 의 단계를 거침 
+  - (chatgpt3.5) LQR은 시스템의 상태를 조절하여 원하는 목표를 달성하는 제어기를 설계하는 방법 중 하나로서, 시스템 모델링/성능 지표 정의/최적제어 입력 계산/피드백 제어기 설계 의 단계를 거침
+- CEM은 무엇인가? (wikipedia)
+  - a Monte Carlo method for importance sampling and optimization
+  - the method approximates the optimal importance sampling estimator by repeating two phases
+    1.draw a sample from a probability distribution.
+    2.minimize the cross-entropy between this distribution and a target distribution to produce a better sample in the next iteration.
