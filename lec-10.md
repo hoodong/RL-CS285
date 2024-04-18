@@ -39,4 +39,5 @@
     - step 4: update parameters of sampling distribution via elite samples
     - repeat step 1 to step 4 until stopping criterion
   - 이 방법이 어떻게 cross-entropy를 최소화 할까?
-  - importance sampling이 어디서 사용되는 걸까? 
+  - importance sampling이 어디서 사용되는 걸까?
+- MCTS 
