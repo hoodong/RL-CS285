@@ -70,9 +70,9 @@
     - $Q_t = C+F^T V_{t+1} F$
     - $q_t = c+f_t^T V_{t+1} f_t + F_t^T v_{t+1}$
     - $K_t = -Q_{u_t u_t}^{-1} Q_{u_t x_t}$
-    - $k_t = -Q_{u_t u_t}^{-1} q_u_t$
-    - $V_t = Q_{t,xx}+Q_{xu}K+K^T Q_{ux}+K^TQ_{uu}K$
-    - $v_t = q_{x}+Q_{xu}k +K^T q_{u}+k^TQ_{uu}k$
+    - $k_t = -Q_{u_t u_t}^{-1} q_{u_t}$
+    - $V_t = Q_{x_t x_t}+Q_{x_t u_t}K_t+K_t^T Q_{u_t x_t}+K_t^T Q_{u_t u_t}K_t$
+    - $v_t = q_{x_t}+Q_{x_t u_t}k_t +K_t^T q_{u_t}+k_t^T Q_{u_t u_t}k_t$
   - forward recursion: $t=1$ to $T$
     - $u \leftarrow Kx+k$
     - $x \leftarrow f(x,u)$
