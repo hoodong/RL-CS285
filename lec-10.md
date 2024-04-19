@@ -53,7 +53,7 @@
 - p25: shooting method와 collocation method의 차이?
 - p26: LQR (linear quadratic regulator)  
   - 최적제어: 물리적인 제약조건을 만족하면서 성능지표 또는 목적함수를 최적화하도록 동적 시스템(dynamic system)의 제어변수을 결정하는 문제
-  - linear-quadratic system: 시스템이 선형, 목적함수가 2차함수인 시스템  
+  - linear-quadratic system: 시스템이 linear, 목적함수가 quadratic인 시스템  
   - (chatgpt3.5) LQR은 시스템의 상태를 조절하여 원하는 목표를 달성하는 제어기를 설계하는 방법 중 하나로서, 시스템 모델링/성능 지표 정의/최적제어 입력 계산/피드백 제어기 설계로 구성된다.
 - p27: linear인 경우에 LQR
   - cost $c(x_t,u_t)$을 2차로 근사할 때 $C_t$는 Hessian, $c_t$는 gradient를 의미할까?
