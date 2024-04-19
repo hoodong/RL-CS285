@@ -65,12 +65,14 @@
   - $Q(x_T,u_T)$는 2차식이므로 $u_T$에 대해 미분하면 최적의 $u_T$를 얻을 수 있다.
 - p27-30: LQR 알고리즘 유도
   - $Q(x_T,u_T) \rightarrow V(x_T) \rightarrow Q(x_{T-1},u_{T-1}) \rightarrow ... $
-- p31: LQR 알고리즘에서 계산되는 것
-  - backward recursion  
+- p31: LQR 알고리즘에서 계산하는 것
+  - backward recursion: $t=T to 1$
+    - $Q_t=C_t+F_t^T V_{t+1} F_t$
+    - $q_t=c_t+F_t^T V_{t+1} f_t + F_t^T v_{t+1}$
     $Q_T,q_T \rightarrow K_T,k_T \rightarrow V_T,v_T \rightarrow
     Q_{T-1},q_{T-1} \rightarrow K_{T-1},k_{T-1} \rightarrow V_{T-1},v_{T-1} \rightarrow
     ... Q_1,q_1 \rightarrow K_1,k_1 \rightarrow V_1,v_1$
-  - forward recursion: {}
+  - forward recursion: $t=1 to T$
 - p34: stochastic인 경우에 LQR
 - p36: nonlinear인 경우에 LQR
   - nonlinear system을 linear-quadratic system으로 근사한다.
