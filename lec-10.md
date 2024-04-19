@@ -31,9 +31,9 @@
   - 최적제어 문제: 물리적인 제약조건을 만족하면서 성능지표 또는 목적함수를 최적화하도록 동적 시스템(dynamic system)의 제어변수을 결정하는 문제
   - linear: 시스템이 선형, quadratic: 목적함수가 2차함수, regulator: 시스템 상태를 0으로 만드는 제어기
   - (chatgpt3.5) LQR은 시스템의 상태를 조절하여 원하는 목표를 달성하는 제어기를 설계하는 방법 중 하나로서, 시스템 모델링/성능 지표 정의/최적제어 입력 계산/피드백 제어기 설계 의 단계를 거침
-- CEM은 무엇인가? (wikipedia)
+- CEM은 무엇인가? 
   - a Monte Carlo method for importance sampling and optimization
-  - 알고리즘
+  - 알고리즘 (wikipedia)
     - step 1: obtain N samples from current sampling distribution
     - step 2: evaluate objective function at sampled points
     - step 3: sort X by objective function values in descending order
@@ -41,4 +41,12 @@
     - repeat step 1 to step 4 until stopping criterion
   - 이 방법이 어떻게 cross-entropy를 최소화 할까?
   - importance sampling이 어디서 사용되는 걸까?
-- MCTS 
+- MCTS?
+  - 모든 tree를 탐색할 수 없으니 어디부터 탐색할 지 정해야 한다.
+  - 보상이 크고 방문 횟수가 적은 노드부터 탐색하자. 
+  - 알고리즘 ($s_1$: root node, $s_l$: leaf node)
+    - step 1: TreePolicy($s_1$를 이용해 $s_l$를 찾는다.
+    - step 2: DefaultPolicy($s_l$)를 이용해 $s_l$의 가치를 평가한다.
+    - step 3: $s_1$과 $s_l$ 사이의 모든 가치를 업데이트 한다.(backup)
+    - step 1 - step 3를 반복한다.
+    - $s_1$에서 최선의 행동의 취한다.
