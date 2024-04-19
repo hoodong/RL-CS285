@@ -64,7 +64,7 @@
   - cost-to-go at $t=T$: $Q(x_T,u_T)=c(x_T,u_T)$
   - $Q(x_T,u_T)$는 2차식이므로 $u_T$에 대해 미분하면 최적의 $u_T$를 얻을 수 있다.
 - p27-30: LQR 알고리즘 유도
-  - $Q(x_{T-1},u_{T-1})=c(x_{T-1},u_{T-1})+V(x_)$
+  - $Q(x_t},u_t)=c(x_t,u_t)+V(x_{t+1})$ 의 재귀식을 이용
 - p31: LQR 알고리즘에서 계산하는 것
   - given: $C,c,F,f,x_1$
   - backward recursion: $t=T$ to $1$
