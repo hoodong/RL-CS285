@@ -68,7 +68,7 @@
   - 현재 V = 현재 Q에서 최적행동을 취한 것
     $V(x_t)=Q(x_t,K_t x_t + k_t)$ ($u_t$에 최적 행동을 대입)
   - 과거 Q = 현재 비용 + 현재 V
-    $$Q(x_{t-1},u_{t-1})=c(x_{t-1},u_{t-1})+V(x_{t})$
+    $Q(x_{t-1},u_{t-1})=c(x_{t-1},u_{t-1})+V(x_{t})$
 - p31: LQR 알고리즘에서 계산하는 것
   - given: $C,c,F,f,x_1$
   - backward recursion: $t=T$ to $1$
