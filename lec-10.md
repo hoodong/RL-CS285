@@ -74,6 +74,8 @@
     - $V \leftarrow Q_{xx}+Q_{xu}K+K^T Q_{ux}+K^TQ_{uu}K$
     - $v \leftarrow q_{x}+Q_{xu}k +K^T q_{u}+k^TQ_{uu}k$
   - forward recursion: $t=1$ to $T$
+    - $u \leftarrow Kx+k$
+    - $x \leftarrow f(x,u)$
 - p34: stochastic인 경우에 LQR
 - p36: nonlinear인 경우에 LQR
   - nonlinear system을 linear-quadratic system으로 근사한다.
