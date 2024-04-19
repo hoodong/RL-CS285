@@ -84,6 +84,7 @@
   - forward recursion: $t=1$ to $T$
     - $u_t = K_t x_t + k_t$
     - $x_{t+1} = f(x_t,u_t)$
+  - backward recursion에서 모든 $K_t,k_t$를 저장해 둬야 하나? forward recursion에서 쓰기 위해서?
 - p34: stochastic인 경우에 LQR
 - p36: nonlinear인 경우에 LQR
   - nonlinear system을 linear-quadratic system으로 근사한다.
