@@ -64,9 +64,11 @@
   - cost-to-go at $t=T$: $Q(x_T,u_T)=c(x_T,u_T)$
   - $Q(x_T,u_T)$는 2차식이므로 $u_T$에 대해 미분하면 최적의 $u_T$를 얻을 수 있다.
 - p27-30: LQR 알고리즘 유도에 필요한 관계식
-  - $u_t = K_t x_t + k_t$: optimal action
-  - $V(x_t)=Q(x_t,K_t x_t + k_t)$: $Q(x_t,u_t)$에서 $u_t$에 optimal action을 대입
-  - $Q(x_t,u_t)=c(x_t,u_t)+V(x_{t+1})$: q-value = current cost + next value
+  - optimal action: $u_t = K_t x_t + k_t$
+  - $Q(x_t,u_t)$에서 $V(x_t)$ 계산:
+    $V(x_t)=Q(x_t,K_t x_t + k_t)$ ($Q(x_t,u_t)$에서 $u_t$에 optimal action을 대입)
+  - $V(x_t)$에서 $Q(x_{t-1},u_{t-1})$ 계산:
+    $$Q(x_{t-1},u_{t-1})=c(x_{t-1},u_{t-1})+V(x_{t})$: q-value = current cost + next value
 - p31: LQR 알고리즘에서 계산하는 것
   - given: $C,c,F,f,x_1$
   - backward recursion: $t=T$ to $1$
