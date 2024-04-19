@@ -56,8 +56,7 @@
   - linear-quadratic system: 시스템이 선형, 목적함수가 2차함수인 시스템  
   - (chatgpt3.5) LQR은 시스템의 상태를 조절하여 원하는 목표를 달성하는 제어기를 설계하는 방법 중 하나로서, 시스템 모델링/성능 지표 정의/최적제어 입력 계산/피드백 제어기 설계로 구성된다.
 - p27: linear인 경우에 LQR
-  - $c(x_t,u_t)$와 $f(x_t,u_t)$를 각각 2차와 1차로 근사할 때 행렬 $C_t,F_t$과 벡터 $c_t,f_t$의 의미는?
-  - 행렬 $C_t,F_t$는 Hessian, 벡터 $c_t,f_t$는 gradient인가?
+  - $c(x_t,u_t)$와 $f(x_t,u_t)$를 각각 2차와 1차로 근사할 때 행렬 $C_t,F_t$과 벡터 $c_t,f_t$의 의미는?  
   - $t=T$에서 Q 함수가 비용+상수로 주어지는 이유: $Q(x_T,u_T)=\text{const}+c(x_T,u_T)$
 - p34: stochastic인 경우에 LQR
 - p36: nonlinear인 경우에 LQR
