@@ -62,7 +62,9 @@
   - $t=T$에서 Q 함수가 비용+상수로 주어지는 이유  
   - 마지막 시간 스텝 $t=T$에서 행동 $u_T$은 비용의 마지막 항에만 영향을 미친다. (이전 항에는 영향을 주지 않는다)
   - $Q(x_t,u_t)$를 시간 $t$부터 $T$까지 누적 비용이라고 하면 $Q(x_T,u_T)=\text{const}+c(x_T,u_T)$ 이다.
-  - $Q(x_T,u_T)$는 2차식이므로 $u_T$에 대해 미분하면 최적의 $u_T$를 얻을 수 있다. 
+  - $Q(x_T,u_T)$는 2차식이므로 $u_T$에 대해 미분하면 최적의 $u_T$를 얻을 수 있다.
+- p27-30: LQR 알고리즘 유도
+  - $Q(x_T,u_T) \rightarrow V(x_T) \rightarrow Q(x_{T-1},u_{T-1}) \rightarrow ... $
 - p34: stochastic인 경우에 LQR
 - p36: nonlinear인 경우에 LQR
   - nonlinear system을 linear-quadratic system으로 근사한다.
