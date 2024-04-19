@@ -70,7 +70,9 @@
   - 과거 Q = 현재 비용 + 현재 V
     $Q(x_{t-1},u_{t-1})=c(x_{t-1},u_{t-1})+V(x_{t})$
 - p31: LQR 알고리즘에서 계산하는 것
-  - given: $C,c,F,f,x_1$
+  - given
+    - 모델 및 목적함수 $C,c,F,f$
+    - 시작 상태 $x_1$
   - backward recursion: $t=T$ to $1$
     - $Q_t = C+F^T V_{t+1} F$
     - $q_t = c+F_t^T V_{t+1} f_t + F_t^T v_{t+1}$
