@@ -51,10 +51,16 @@
 - p23: trajectory optimization with derivative
   - 앞에서는 목적함수의 구조를 모르는 상황이었지만(black optimization), 이제 목적함수의 미분을 알 수 있다면?
 - p25: shooting method와 collocation method의 차이?
-- p26: LQR (linear quadratic regulator)
+- p26: LQR (linear quadratic regulator)  
   - 최적제어: 물리적인 제약조건을 만족하면서 성능지표 또는 목적함수를 최적화하도록 동적 시스템(dynamic system)의 제어변수을 결정하는 문제
-  - linear: 시스템이 선형, quadratic: 목적함수가 2차함수, regulator: 시스템 상태를 0(?)으로 만드는 제어기
-  - (chatgpt3.5) LQR은 시스템의 상태를 조절하여 원하는 목표를 달성하는 제어기를 설계하는 방법 중 하나로서, 시스템 모델링/성능 지표 정의/최적제어 입력 계산/피드백 제어기 설계로 구성됨
-- p27: 시스템이 linear인 경우에 LQR
-- p34: 시스템이 stochastic인 경우에 LQR
-- p36: 시스템이 nonlinear인 경우에 LQR
+  - linear-quadratic system: 시스템이 선형, 목적함수가 2차함수인 시스템  
+  - LQR은 시스템의 상태를 조절하여 원하는 목표를 달성하는 제어기를 설계하는 방법 중 하나로서, 시스템 모델링/성능 지표 정의/최적제어 입력 계산/피드백 제어기 설계로 구성된다. (chatgpt3.5)
+- p27: linear인 경우에 LQR
+- p34: stochastic인 경우에 LQR
+- p36: nonlinear인 경우에 LQR
+  - nonlinear system을 linear-quadratic system으로 근사한다.
+  - iterative LQR (iLQR)
+- p39: iLQR는 Newton's method의 근사
+- p40: differential dynamic programming (DDP)
+  - 시스템을 2차로 근사 (Newton's method)
+    
