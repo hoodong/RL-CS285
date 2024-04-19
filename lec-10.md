@@ -67,8 +67,12 @@
   - $Q(x_T,u_T) \rightarrow V(x_T) \rightarrow Q(x_{T-1},u_{T-1}) \rightarrow ... $
 - p31: LQR 알고리즘에서 계산하는 것
   - backward recursion: $t=T to 1$
-    - $Q_t=C_t+F_t^T V_{t+1} F_t$
-    - $q_t=c_t+F_t^T V_{t+1} f_t + F_t^T v_{t+1}$
+    - $Q(t)=C+F^T V(t+1) F$
+    - $q(t)=c(t)+F^T V(t+1) f + F^T v(t+1)$
+    - $K(t)=-Q_{uu}^{-1}(t) Q_{ux}(t)$
+    - $k(t)=-Q_{uu}^{-1}(t) q_u(t)$
+    - $V(t)=Q_{xx}(t)+Q_{xu}(t)K(t)+K(t)^T Q_{ux}(t)+K^T(t)Q_{uu}(t)K(t)$
+    - $v(t)=q_{x}(t)+Q_{xu}(t)k(t) +K(t)^T q_{u}(t)+k^T(t)Q_{uu}(t)k(t)$
     $Q_T,q_T \rightarrow K_T,k_T \rightarrow V_T,v_T \rightarrow
     Q_{T-1},q_{T-1} \rightarrow K_{T-1},k_{T-1} \rightarrow V_{T-1},v_{T-1} \rightarrow
     ... Q_1,q_1 \rightarrow K_1,k_1 \rightarrow V_1,v_1$
