@@ -71,7 +71,7 @@
     - $q \leftarrow c+f^T V f + F^T v$
     - $K \leftarrow -Q_{uu}^{-1} Q_{ux}$
     - $k \leftarrow -Q_{uu}^{-1} q_u$
-    - $V \leftarrow Q_{xx}+Q_{xu}K+K^T Q_{ux}+K^T(t)Q_{uu}K$
+    - $V \leftarrow Q_{xx}+Q_{xu}K+K^T Q_{ux}+K^TQ_{uu}K$
     - $v \leftarrow q_{x}+Q_{xu}k +K^T q_{u}+k^TQ_{uu}k$
   - forward recursion: $t=1$ to $T$
 - p34: stochastic인 경우에 LQR
