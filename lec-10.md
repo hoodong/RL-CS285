@@ -60,7 +60,6 @@
 - p36: nonlinear인 경우에 LQR
   - nonlinear system을 linear-quadratic system으로 근사한다.
   - iterative LQR (iLQR)
-- p39: iLQR는 Newton's method의 근사
-- p40: differential dynamic programming (DDP)
-  - 시스템을 2차로 근사 (Newton's method)
+  - iLQR는 Newton's method의 근사
+  - differential dynamic programming (DDP)는 시스템을 2차로 근사
     
