@@ -73,7 +73,7 @@
     - $K_t = -Q_{u_t u_t}^{-1} Q_{u_t x_t}$
     - $k_t = -Q_{u_t u_t}^{-1} q_{u_t}$
     - $V_t = Q_{x_t x_t}+Q_{x_t u_t}K_t+K_t^T Q_{u_t x_t}+K_t^T Q_{u_t u_t}K_t$
-    - $v_t = q_{x_t}+Q_{x_t u_t}k_t +K_t^T q_{u_t}+k_t^T Q_{u_t u_t}k_t$
+    - $v_t = q_{x_t}+Q_{x_t u_t}k_t +K_t^T q_{u_t}+K_t^T Q_{u_t u_t}k_t$
   - forward recursion: $t=1$ to $T$
     - $u_t = K_t x_t + k_t$
     - $x_{t+1} = f(x_t,u_t)$
