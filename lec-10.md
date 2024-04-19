@@ -66,6 +66,7 @@
 - p27-30: LQR 알고리즘 유도
   - $Q(x_T,u_T) \rightarrow V(x_T) \rightarrow Q(x_{T-1},u_{T-1}) \rightarrow ... $
 - p31: LQR 알고리즘에서 계산하는 것
+  - given: $C,c,F,f,x_1$
   - backward recursion: $t=T$ to $1$
     - $Q_t = C+F^T V_{t+1} F$
     - $q_t = c+f_t^T V_{t+1} f_t + F_t^T v_{t+1}$
@@ -74,8 +75,8 @@
     - $V_t = Q_{x_t x_t}+Q_{x_t u_t}K_t+K_t^T Q_{u_t x_t}+K_t^T Q_{u_t u_t}K_t$
     - $v_t = q_{x_t}+Q_{x_t u_t}k_t +K_t^T q_{u_t}+k_t^T Q_{u_t u_t}k_t$
   - forward recursion: $t=1$ to $T$
-    - $u \leftarrow Kx+k$
-    - $x \leftarrow f(x,u)$
+    - $u_t = K_t x_t + k_t$
+    - $x_{t+1} = f(x_t,u_t)$
 - p34: stochastic인 경우에 LQR
 - p36: nonlinear인 경우에 LQR
   - nonlinear system을 linear-quadratic system으로 근사한다.
