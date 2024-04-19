@@ -45,7 +45,7 @@
   - 모든 tree를 탐색할 수 없으니 어디부터 탐색할 지 정해야 한다.
   - 보상이 크고 방문 횟수가 적은 노드부터 탐색하자. 
   - 알고리즘 ($s_1$: root node, $s_l$: leaf node)
-    - step 1: TreePolicy($s_1$를 이용해 $s_l$를 찾는다.
+    - step 1: TreePolicy($s_1$)를 이용해 $s_l$를 찾는다.
     - step 2: DefaultPolicy($s_l$)를 이용해 $s_l$의 가치를 평가한다.
     - step 3: $s_1$과 $s_l$ 사이의 모든 가치를 업데이트 한다.(backup)
     - step 1 - step 3를 반복한다.
