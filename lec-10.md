@@ -71,9 +71,9 @@
     $Q(x_{t-1},u_{t-1})=c(x_{t-1},u_{t-1})+V(x_{t})$
 - p31: LQR 알고리즘에서 계산하는 것
   - given
-    - 모델 파라미터 $F,f$ (linear)
-    - 목적함수 파라미터 $C,c$ (quadratic)
-    - 시작 상태 $x_1$
+    - 모델 파라미터(linear): $F,f$ 
+    - 목적함수 파라미터(quadratic): $C,c$
+    - 시작 상태: $x_1$
   - backward recursion: $t=T$ to $1$
     - $Q_t = C+F^T V_{t+1} F$
     - $q_t = c+F_t^T V_{t+1} f_t + F_t^T v_{t+1}$
