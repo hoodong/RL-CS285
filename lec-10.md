@@ -13,7 +13,7 @@
     - (Sutton 8.1) any computational process that takes a model as input and produces or improves a policy for interacting with the modeled environment
   - control과 planning의 차이?
   - prediction과 control의 차이?
-  - open-loop와 closes-loop의 차이?  
+  - open-loop와 closes-loop의 차이? feedback 유무 
 - 환경의 transition dynamic을 아는 경우
   - deterministic case?  
   - stochastic open-loop case?
