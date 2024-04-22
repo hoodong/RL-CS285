@@ -26,8 +26,9 @@
   - Monte Carlo tree search (MCTS)
   - linear quadratic regulator (LQR)
 - p15: CEM
-  - a Monte Carlo method for importance sampling and optimization
-  - 알고리즘 (wikipedia)
+  - a Monte Carlo method for importance sampling and optimization (wiki)
+  - The CE method can be viewed as an adaptive importance sampling procedure that uses the cross-entropy or Kullback–Leibler divergence as a measure of closeness between two sampling distributions. The CE method is particularly useful for the estimation of rare-event probabilities. (Krose 2013)
+  - 알고리즘 (wiki)
     - step 1: obtain N samples from current sampling distribution
     - step 2: evaluate objective function at sampled points
     - step 3: sort X by objective function values in descending order
