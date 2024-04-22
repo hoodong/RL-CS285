@@ -12,7 +12,7 @@
   - model-free RL은 real experiance만 사용
   - model-based RL은 real experiance 뿐만 아니라 simulated experiance도 사용
   - simulated experiance는 모델에서 생성됨
-  - REF: Why Choose Model-Based Reinforcement Learning? (Brian Douglas)
+  - Why Choose Model-Based Reinforcement Learning? (Brian Douglas)
     - https://www.youtube.com/watch?v=ztT2ZLWTfXw&t=1s
 - 용어
   - planning?
