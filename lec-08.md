@@ -31,7 +31,7 @@
 - p22: double Q-learning의 원리를 쉽게 설명하면?
   - $\max_a'Q_\phi'(s',a')$의 값이 overestimation 된다.
   - 어떤 신호의 최대값 추정시 가산성 잡음 때문에 측정된 최대값은 1보다 클 확률이 높다.
-  - $E[max(X1,X2)] \ge max(E[X1],E[X2])]$
+  - $E[\max(X1,X2)] \ge \max(E[X1],E[X2])]$
   - 이를 해결하기 위해 행동 선택과 최대값 계산에 서로 다른 $Q$ 함수를 사용함
 - p27: Q-learning에서 continuous actions?
   - option 1: stochastic optimization?
