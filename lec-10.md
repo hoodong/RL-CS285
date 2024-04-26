@@ -26,11 +26,13 @@
   - stochastic closed-loop case?
 - stochastic 인 경우에 환경/정책 중에 어떤 것이 random? 둘 다?
 - deterministic인 경우는 왜 open-loop와 closed-loop로 나누지 않는지? 
-- open loop methods
-  - random shooting
-  - cross-entropy method (CEM)
-  - Monte Carlo tree search (MCTS)
-  - linear quadratic regulator (LQR)
+- open-loop planning (이 분류가 맞는지?)
+  - stochastic optimization
+    - random shooting
+    - cross-entropy method (CEM)
+    - Monte Carlo tree search (MCTS)
+  - trajectory optimization
+    - linear quadratic regulator (LQR)
 - p15: CEM (cross-entropy method)
   - The CE method is a Monte Carlo method for importance sampling and optimization. (wiki)
   - The CE method can be viewed as an adaptive importance sampling procedure that uses the cross-entropy or Kullback–Leibler divergence as a measure of closeness between two sampling distributions. The CE method is particularly useful for the estimation of rare-event probabilities. (Krose 2013)
