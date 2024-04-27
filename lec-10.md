@@ -50,7 +50,7 @@
   - 알고리즘
     - step 1: root node에서 TreePolicy를 이용해 leaf node를 찾는다.(selection, expansion)
     - step 2: leaf node에서 DefaultPolicy를 이용해 leaf node의 가치를 평가한다.(rollout)
-    - step 3: root node와 leaf node 사이의 모든 가치를 업데이트 한다.(backup)
+    - step 3: root node와 leaf node 사이의 모든 가치를 업데이트 한다.(backup)
     - step 1~3을 반복한다.
     - root node에서 최선의 행동의 취한다.
   - step 2가 왜 필요한지? (rollout을 이용해 leaf node의 가치 계산)
