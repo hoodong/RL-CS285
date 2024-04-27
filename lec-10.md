@@ -49,17 +49,17 @@
     - 현재 상태(root node)에서 행동가치를 추정하기 위함
     - 모든 tree를 탐색할 수 없으니 어디부터 탐색할지 정해야 한다.
     - 보상이 크고 방문 횟수가 적은 노드부터 탐색하자. 
-  - 알고리즘 ($s_1$: root node, $s_l$: leaf node)
-    - step 1: TreePolicy($s_1$)를 이용해 $s_l$를 찾는다.
-    - step 2: DefaultPolicy($s_l$)를 이용해 $s_l$의 가치를 평가한다.
-    - step 3: $s_1$과 $s_l$ 사이의 모든 가치를 업데이트 한다.(backup)
-    - step 1 - step 3를 반복한다.
-    - $s_1$에서 최선의 행동의 취한다.
-  - step 2가 왜 필요한지? (leaf node의 가치 계산)
-  - TreePolicy는 UCT (upper confidence bounding tree)를 이용한다.
-  - UCT는 confidence interval의 upper bound를 계산한다. (Hoeffding's inequality에서 유도)
+  - 알고리즘
+    - step 1: root node에서 TreePolicy를 이용해 leaf node를 찾는다.(selection, expansion)
+    - step 2: leaf node에서 DefaultPolicy를 이용해 leaf node의 가치를 평가한다.(rollout)
+    - step 3: root node와 leaf node 사이의 모든 가치를 업데이트 한다.(backup)
+    - step 1~3을 반복한다.
+    - root node에서 최선의 행동의 취한다.
+  - step 2가 왜 필요한지? (rollout을 이용해 leaf node의 가치 계산)
+  - TreePolicy는 UCT(upper confidence bounding tree)를 사용한다
+    - UCT는 confidence interval의 upper bound를 계산한다. (by Hoeffding's inequality)
   - 일반적인 MC control과 MCTS의 차이점이 무엇인지?
-  - root node에서 rollout 하지 않고 leaf node에서 rollout하는 이유는?
+    - root node에서 rollout 하지 않고 leaf node에서 rollout하는 이유는?
 - p23: trajectory optimization with derivative
   - 앞에서는 미분을 사용하지 않았지만(black optimization), 이제 미분을 안다면?
   - optimal control에서는 상태를 $x_t$, 행동을 $u_t$로 표기한다.
