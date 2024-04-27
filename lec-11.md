@@ -1,4 +1,4 @@
-# Lecture 11. Model-based reinforcement learning
+# Lecture 11. Model-based RL
 
 ## keywords
 - naive approach
