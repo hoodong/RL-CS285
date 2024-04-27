@@ -32,7 +32,7 @@
   - trajectory optimization
     - linear quadratic regulator (LQR)
 - p15: CEM (cross-entropy method)
-  - (Wiki) a Monte Carlo method for importance sampling and optimization.
+  - (Wiki) a Monte Carlo method for importance sampling and optimization.
   - (Krose 2013) The CE method can be viewed as an adaptive importance sampling procedure that uses the cross-entropy or Kullback–Leibler divergence as a measure of closeness between two sampling distributions. The CE method is particularly useful for the estimation of rare-event probabilities.
   - 알고리즘 (Wiki)
     - step 1: obtain N samples from current sampling distribution
@@ -40,7 +40,7 @@
     - step 3: sort X by objective function values in descending order
     - step 4: update parameters of sampling distribution via elite samples
     - repeat step 1 to step 4 until stopping criterion
-  - 왜 cross-entropy 방법이라고 부를까? 이 방법이CE를 최소화 할까? 
+  - 왜 cross-entropy 방법이라고 부를까? 이 방법이 CE를 최소화 할까? 
   - importance sampling이 어디서 사용되는 걸까?
 - p20: MCTS (MC tree search)
   - 현재 상태에서 planning을 통해(모델을 이용해) 행동을 결정(트리를 탐색)하는 문제
