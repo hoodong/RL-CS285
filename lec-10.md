@@ -12,8 +12,6 @@
   - model-free RL은 real experiance만 사용
   - model-based RL은 real experiance 뿐만 아니라 simulated experiance도 사용
   - real experiance는 환경과 상호작용을 통해, simulated experiance는 model로부터 얻어짐
-  - Why Choose Model-Based Reinforcement Learning? (Brian Douglas)
-    - https://www.youtube.com/watch?v=ztT2ZLWTfXw&t=1s
 - 용어
   - planning?
     - (Sutton 8.1) any computational process that takes a model as input and produces or improves a policy for interacting with the modeled environment
@@ -59,7 +57,7 @@
   - TreePolicy는 UCT(upper confidence bounding tree)를 사용한다
     - UCT는 confidence interval의 upper bound를 계산한다. (by Hoeffding's inequality)
   - 일반적인 MC control과 MCTS의 차이점이 무엇인지?
-    - root node에서 rollout 하지 않고 leaf node에서rollout하는 이유는?
+    - root node에서 rollout 하지 않고 leaf node에서 rollout하는 이유는?
 - p23: trajectory optimization with derivative
   - 앞에서는 미분을 사용하지 않았지만(black optimization), 이제 미분을 안다면?
   - optimal control에서는 상태를 $x_t$, 행동을 $u_t$로 표기한다.
