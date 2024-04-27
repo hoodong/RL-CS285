@@ -46,7 +46,7 @@
   - importance sampling이 어디서 사용되는 걸까?
 - p20: MCTS (MC tree search)
   - 현재 상태에서 planning을 통해(모델을 이용해) 행동을 결정(트리를 탐색)하는 문제
-    - 현재 상태(root node)에서 행동가치들을 추정해야 함
+    - 현재 상태(root node)에서 행동가치를 추정하기 위함
     - 모든 tree를 탐색할 수 없으니 어디부터 탐색할지 정해야 한다.
     - 보상이 크고 방문 횟수가 적은 노드부터 탐색하자. 
   - 알고리즘 ($s_1$: root node, $s_l$: leaf node)
