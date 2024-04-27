@@ -11,7 +11,7 @@
 - model-free RL vs model-based RL
   - model-free RL은 real experiance만 사용
   - model-based RL은 real experiance 뿐만 아니라 simulated experiance도 사용
-  - simulated experiance는 model에서 생성됨
+  - real experiance는 환경과 상호작용을 통해, simulated experiance는 model로부터 얻어짐
   - Why Choose Model-Based Reinforcement Learning? (Brian Douglas)
     - https://www.youtube.com/watch?v=ztT2ZLWTfXw&t=1s
 - 용어
@@ -19,12 +19,12 @@
     - (Sutton 8.1) any computational process that takes a model as input and produces or improves a policy for interacting with the modeled environment
   - control과 planning의 차이?
   - prediction과 control의 차이?
-  - open-loop와 closes-loop의 차이? feedback 유무 
+  - open-loop와 closes-loop의 차이?
 - 환경의 transition dynamic을 아는 경우
   - deterministic case?  
   - stochastic open-loop case?
   - stochastic closed-loop case?
-- stochastic 인 경우에 환경/정책 중에 어떤 것이 random? 둘 다?
+- stochastic 인 경우에 환경/정책 중에 어떤 것이 random한가? 환경
 - deterministic인 경우는 왜 open-loop와 closed-loop로 나누지 않는지? 
 - open-loop planning (이 분류가 맞는지?)
   - stochastic optimization
@@ -34,15 +34,15 @@
   - trajectory optimization
     - linear quadratic regulator (LQR)
 - p15: CEM (cross-entropy method)
-  - The CE method is a Monte Carlo method for importance sampling and optimization. (wiki)
-  - The CE method can be viewed as an adaptive importance sampling procedure that uses the cross-entropy or Kullback–Leibler divergence as a measure of closeness between two sampling distributions. The CE method is particularly useful for the estimation of rare-event probabilities. (Krose 2013)
-  - 알고리즘 (wiki)
+  - (Wiki) a Monte Carlo method for importance sampling and optimization.
+  - (Krose 2013) The CE method can be viewed as an adaptive importance sampling procedure that uses the cross-entropy or Kullback–Leibler divergence as a measure of closeness between two sampling distributions. The CE method is particularly useful for the estimation of rare-event probabilities.
+  - 알고리즘 (Wiki)
     - step 1: obtain N samples from current sampling distribution
     - step 2: evaluate objective function at sampled points
     - step 3: sort X by objective function values in descending order
     - step 4: update parameters of sampling distribution via elite samples
     - repeat step 1 to step 4 until stopping criterion
-  - 이 방법이 어떻게 cross-entropy를 최소화 할까?
+  - 왜 cross-entropy 방법이라고 부를까? 이 방법이CE를 최소화 할까? 
   - importance sampling이 어디서 사용되는 걸까?
 - p20: MCTS (MC tree search)
   - 현재 상태에서 planning을 통해(모델을 이용해) 행동을 결정(트리를 탐색)하는 문제
