@@ -59,7 +59,7 @@
   - TreePolicy는 UCT(upper confidence bounding tree)를 사용한다
     - UCT는 confidence interval의 upper bound를 계산한다. (by Hoeffding's inequality)
   - 일반적인 MC control과 MCTS의 차이점이 무엇인지?
-    - root node에서 rollout 하지 않고 leaf node에서 rollout하는 이유는?
+    - root node에서 rollout 하지 않고 leaf node에서rollout하는 이유는?
 - p23: trajectory optimization with derivative
   - 앞에서는 미분을 사용하지 않았지만(black optimization), 이제 미분을 안다면?
   - optimal control에서는 상태를 $x_t$, 행동을 $u_t$로 표기한다.
