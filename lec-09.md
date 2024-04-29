@@ -17,7 +17,7 @@
     혹시 importance sampling 개념?
   - 즉, old policy로 얻은 샘플을 이용해 new policy의 기대값을 계산한다는 의미? 
 - p6: distribution mismatch
-  - 근사: $J(\theta')-J(\theta)\approx\bar{A}(\theta')$
+  - 근사: $J(\theta')-J(\theta)\approx\bar{A}(\theta')$ : old policy의 샘플로 계산한 new policy의 advantage
   - 가정: $\pi_{\theta'}\approx\pi_{\theta} \rightarrow p_{\theta'}(s_t)\approx p_{\theta}(s_t)$
   - 목표: old policy에서 얻어진 샘플을 이용해 policy를 개선할 수 있다.
     
