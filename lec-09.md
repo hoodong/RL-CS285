@@ -20,7 +20,7 @@
   - 근사: $J(\theta')-J(\theta)\approx\bar{A}(\theta')$ : old policy의 샘플로 계산한 new policy의 advantage
   - 가정: $\pi_{\theta'}\approx\pi_{\theta} \rightarrow p_{\theta'}(s_t)\approx p_{\theta}(s_t)$
 - p11: bounding distributional mismatch
-  - 정책의 차이가 $\epsilon$ 이하이면, 분포의 차이는 $2\epsilon t$ 이하이다.
+  - 정책의 차이가 $\epsilon$ 이하이면, 분포의 차이는 $2\epsilon t$ 이하이다.   
   - $|\pi_{\theta'}-\pi_{\theta}|\le\epsilon \rightarrow |p_{\theta'}-p_{\theta}|\le 2\epsilon t$ 
     
     
