@@ -26,5 +26,8 @@
 - p14: more convenient bound
   - 제한조건을 total variation distance 대신 KL-divergence를 쓰면 더 편리하다.
   - 즉 두 정책의 KL-divergence를 제한조건으로 두고 advantage를 최대화하는 policy를 찾는다.
+- p18: 목적함수를 근사
+  - $\theta'$의 advantage를 $\theta$에서 1차 테일러 근사 (선형화)
+  - $\bar{A}(\theta')\approx \del_\theta \bar{A}(\theta')^T (\theta'-\theta)$
     
     
