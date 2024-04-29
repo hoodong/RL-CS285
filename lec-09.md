@@ -19,5 +19,6 @@
 - p6: distribution mismatch
   - 근사: $J(\theta')-J(\theta)\approx\bar{A}(\theta')$
   - 가정: $\pi_{\theta'}\approx\pi_{\theta} \rightarrow p_{\theta'}(s_t)\approx p_{\theta}(s_t)$
+  - 목표: old policy에서 얻어진 샘플을 이용해 policy를 개선할 수 있다.
     
     
