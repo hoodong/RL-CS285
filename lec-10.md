@@ -12,23 +12,23 @@
   - model-free RL은 real experiance만 사용
   - model-based RL은 real experiance 뿐만 아니라 simulated experiance도 사용
   - real experiance는 환경과 상호작용을 통해, simulated experiance는 model로부터 얻어짐
-- 용어
-  - planning?
-    - (Sutton 8.1) any computational process that takes a model as input and produces or improves a policy for interacting with the modeled environment
-  - control과 planning의 차이?
+- planning
+  - (Sutton 8.1) any computational process that takes a model as input and produces or improves a policy for interacting with the modeled environment
+  - planning 과 control의 차이?
   - prediction과 control의 차이?
-  - open-loop와 closes-loop의 차이?
+- open-loop와 closes-loop planning의 차이?
+  - open-loop planning: a sequency of actions 
+  - close-loop planning: mapping from states to actions
 - 환경의 transition dynamic을 아는 경우
   - deterministic case?  
   - stochastic open-loop case?
   - stochastic closed-loop case?
-- stochastic 인 경우에 환경/정책 중에 어떤 것이 random한가? 환경
 - deterministic인 경우는 왜 open-loop와 closed-loop로 나누지 않는지? 
-- open-loop planning (이 분류가 맞는지?)
+- 이 장에서 다룰 알고리즘
   - stochastic optimization
     - random shooting
     - cross-entropy method (CEM)
-    - Monte Carlo tree search (MCTS)
+  - Monte Carlo tree search (MCTS)
   - trajectory optimization
     - linear quadratic regulator (LQR)
 - p15: CEM (cross-entropy method)
