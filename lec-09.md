@@ -52,8 +52,8 @@
     - $\frac{\partial L}{\partial \lambda}
       =\frac{1}{2}(\theta'-\theta)^T\mathbf{F}(\theta'-\theta)-\epsilon=0$
     $\rightarrow\frac{1}{2\lambda^2}\nabla J(\theta)^T \mathbf{F}^{-1}\nabla J(\theta)=\epsilon$
-  - learning rate
-    - $\theta'=\theta+\frac{1}{\lambda}\mathbf{F}^{-1}\nabla J(\theta)$
+  - learning rate $\alpha$
+    - $\theta'=\theta+\alpha\mathbf{F}^{-1}\nabla J(\theta)$
     - $\alpha=\sqrt{\frac{2\epsilon}{\nabla J(\theta)^T \mathbf{F}^{-1}\nabla J(\theta)}}$
       
     
