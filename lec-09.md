@@ -15,7 +15,7 @@
     $\nabla_\theta J(\theta)\approx\frac{1}{N}\sum\limits_{i=1}^{N}\sum\limits_{t=1}^{T}
     \nabla_\theta \log \pi_\theta (a_{i,t}|s_{i,t}) \hat{A}^\theta (x_t,u_t)$
   - policy iteration  
-    $\pi'(a_t|s_t)=1$ if $a_t=\arg\max_{a_t}A^\pi(s_t,a_t)$
+    $\pi'(a_t|s_t)=1$ if $a_t=\arg\max_{a_t}A^\pi(s_t,a_t)$  
     $$\pi'(a_t|s_t)=
     \begin{cases}
     1,\\
