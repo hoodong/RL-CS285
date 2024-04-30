@@ -42,7 +42,9 @@
   - $\theta'$의 advantage를 $\theta$에서 1차 테일러 근사 (선형화)
   - $\bar{A}(\theta')\approx \nabla_\theta \bar{A}(\theta')^T (\theta'-\theta)$
   - $\bar{A}(\theta')=\bar{A}(\theta)$: policy gradient 유도와 동일
-- p20-p22: policy gradient vs. natural gradient
-  - Lagrange multipler를 이용해 learning rate $\alpha$를 구하는 방법?
+- p22: natural gradient의 learning rate?
+  - $\max_\theta'\nabla J(\theta)^T (\theta'-\theta)$
+    s.t. $\frac{}{1}{2}(\theta'-theta)^T F(\theta'-theta)$
+  - $L(\theta',\lambda)=$
     
     
