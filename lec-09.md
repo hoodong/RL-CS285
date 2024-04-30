@@ -15,7 +15,8 @@
     $\nabla_\theta J(\theta)\approx\frac{1}{N}\sum\limits_{i=1}^{N}\sum\limits_{t=1}^{T}
     \nabla_\theta \log \pi_\theta (a_{i,t}|s_{i,t}) \hat{A}^\theta (x_t,u_t)$
   - policy iteration  
-    $\pi'(a_t|s_t)=1$ if $a_t=\arg\max_{a_t}A^\pi(s_t,a_t)$, otherwise 0
+    $\pi'(a_t|s_t)=1$ if $a_t=\arg\max_{a_t}A^\pi(s_t,a_t)$
+    $\pi'(a_t|s_t)=0$ otherwise
 - p4: 두 번째 등식이 성립하는 이유는?
   - $J(\theta) = E_{\tau\sim p_{\theta'}(\tau)}[V^{\pi_\theta}(s_0)]$  
   - trajectory $\tau$의 분포에는 초기상태 $p(s_0)$, 정책 $\pi(a|s)$, 전이확률 $p(s'|s,a)$이 모두 포함되어 있음
