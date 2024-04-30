@@ -18,9 +18,16 @@
 - p4: 두 번째 등식이 성립하는 이유는?
   - $J(\theta) = E_{\tau\sim p_{\theta'}(\tau)}[V^{\pi_\theta}(s_0)]$  
   - trajectory는 new policy를 따르고, value fuction은 old function을 따른다?
-- p5: policy gradient = policy iteration?  
+- p5: 기대값은 새 정책, advantage는 이전 정책? 
   - $J(\theta')-J(\theta)=E_{\tau\sim p_\theta'} \left[ \sum_t \gamma^t A^{\pi_\theta} (s_t,a_t)\right]$
-  - p4 질문과 마찬가지로 advantage는 old policy를 따르고, trajectory는 new policy를 따른다는 것이 무슨 뜻인지?
+  - 이 식에서 advantage는 old policy를 따르고, trajectory는 new policy를 따른다는 것이 무슨 뜻인지?
+  - advatage $A_\pi (s_t,a_t)$는 행동가치 $Q_\pi(s_t,a_t)$와 상태가치 $V_\pi(s_t)$의 차이로 정의된다.
+    즉 상태 $s_t$에서 행동 $a_t$를 하고 이후에는 정책 $\pi$에 따라 행동할 때,
+    행동 $a_t$으로 인한 가치 증가를 의미한다.
+  - 식을 풀어 써보면 $J(\theta')-J(\theta)=$
+    $E[A_\pi(s_0,a_0)+\gamma A_\pi(s_1,a_1)+\gamma^2 A_\pi(s_2,a_2)+...]$,
+    $s_t~p_{\theta'}, a_t~\pi_{\theta'}$
+  - 따라서 기대값은 new policy, advantage는 old policy를 따른다!
 - p6: distribution mismatch
   - 근사: $J(\theta')-J(\theta)\approx\bar{A}(\theta')$ : old policy의 샘플로 계산한 new policy의 advantage
   - 가정: $\pi_{\theta'}\approx\pi_{\theta} \rightarrow p_{\theta'}(s_t)\approx p_{\theta}(s_t)$
@@ -31,7 +38,6 @@
 - p12: 지금까지 정리하면
   - $\theta'\leftarrow \arg\max_{\theta'}\sum_t \bar{A}(\theta)$
     s.t. $|\pi_{\theta'}-\pi_\theta| \le \epsilon$
-  - 새 정책에 따른 목적함수의 증가분은 advantage의 누적합과 같다(Kakade 2002). 이 때 advantage는 새 정책에서 계산된다(?). 하지만 새 정책과 이전 정책의 차이가 작다면, 이전 정책의 샘플을 이용해 새 정책의 advantage를 계산할 수 있다. 따라서 정책 변화가 작다는 제한조건에서 이 advantage를 최대화하도록 정책 파라미터를 찾으면 된다.
 - p14: more convenient bound
   - 제한조건을 total variation distance 대신 KL-divergence를 쓰면 더 편리하다.
   - 즉 두 정책의 KL-divergence를 제한조건으로 두고 advantage를 최대화하는 policy를 찾는다.
