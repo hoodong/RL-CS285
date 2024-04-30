@@ -48,7 +48,7 @@
   - $L(\theta',\lambda)=J(\theta)^T (\theta'-\theta)
     \lambda[\frac{1}{2}(\theta'-theta)^T\mathbf{F}(\theta'-theta)-\epsilon]$  
     $\frac{\partial L}{\partial \theta'}=J(\theta)-\lambda\mathbf{F}(\theta'-theta)=0$  
-    $\frac{\partial L}{\partial \lambda}=\frac{1}{2}(\theta'-theta)^T\mathbf{F}(\theta'-theta)-\epsilon=0$
+    $\frac{\partial L}{\partial \lambda}=\frac{1}{2}(\theta'-\theta)^T\mathbf{F}(\theta'-\theta)-\epsilon=0$
     
     
     
