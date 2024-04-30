@@ -20,7 +20,7 @@
   - trajectory는 new policy를 따르고, value fuction은 old function을 따른다?
 - p5: 기대값은 새 정책, advantage는 이전 정책? 
   - $J(\theta')-J(\theta)=E_{\tau\sim p_\theta'} \left[ \sum_t \gamma^t A^{\pi_\theta} (s_t,a_t)\right]$
-  - 이 식에서 advantage는 old policy를 따르고, trajectory는 new policy를 따른다는 것이 무슨 뜻인지?
+  - advantage는 old policy를 따르고, trajectory는 new policy를 따른다는 것이 무슨 뜻인지?
   - advatage $A_\pi (s_t,a_t)$는 행동가치 $Q_\pi(s_t,a_t)$와 상태가치 $V_\pi(s_t)$의 차이로 정의된다.
     즉 상태 $s_t$에서 행동 $a_t$를 하고 이후에는 정책 $\pi$에 따라 행동할 때,
     행동 $a_t$으로 인한 가치 증가를 의미한다.
