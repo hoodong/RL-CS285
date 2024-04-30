@@ -41,7 +41,8 @@
 - p18-p19: 목적함수를 근사
   - $\theta'$의 advantage를 $\theta$에서 1차 테일러 근사 (선형화)
   - $\bar{A}(\theta')\approx \nabla_\theta \bar{A}(\theta')^T (\theta'-\theta)$
-  - $\bar{A}(\theta')=\bar{A}(\theta)$: policy gradient 유도와 동일
+  - $\nabla_\theta\bar{A}(\theta')=\nabla_\theta J(\theta)$: policy gradient와  동일
+  - 여기서 J(\theta)의 정의는?
 - p22: natural gradient의 learning rate? (Lagrange multiplier 이용)
   - $\max\limits_\theta'\nabla J(\theta)^T (\theta'-\theta)$
     s.t. $\frac{1}{2}(\theta'-\theta)^T\mathbf{F}(\theta'-\theta)$
