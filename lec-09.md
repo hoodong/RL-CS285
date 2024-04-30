@@ -7,9 +7,7 @@
 - natural gradient
 
 ## 질문
-- p3: policy gradient vs. policy iteration
-  - step 1: advatage 추정 $\hat{A}^\theta (s_t,a_t)$
-  - step 2: policy 업데이트
+- p3: (review) policy gradient vs. policy iteration
   - policy gradient  
     $\theta \leftarrow \theta + \alpha\nabla_\theta J(\theta)$  
     $\nabla_\theta J(\theta)\approx\frac{1}{N}\sum\limits_{i=1}^{N}\sum\limits_{t=1}^{T}
