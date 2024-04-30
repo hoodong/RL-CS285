@@ -33,7 +33,7 @@
 - p12: 지금까지 정리하면
   - $\theta'\leftarrow \arg\max_{\theta'}\sum_t \bar{A}(\theta)$
     s.t. $|\pi_{\theta'}-\pi_\theta| \le \epsilon$
-  - 새 정책에 따른 목적함수의 증가분은 advantage의 누적합과 같다(Kakade 2002). 이 때 advantage는 새 정책에서 계산된 것이다. 하지만 새 정책과 이전 정책의 차이가 작다면, 이전 정책의 샘플을 이용해 새 정책의 advantage를 계산할 수 있다. 따라서 정책 변화가 작다는 제한조건에서 advantage를 최대화하도록 정책 파라미터를 찾으면 된다.
+  - 새 정책에 따른 목적함수의 증가분은 advantage의 누적합과 같다(Kakade 2002). 이 때 advantage는 새 정책에서 계산된 것이다. 하지만 새 정책과 이전 정책의 차이가 작다면, 이전 정책의 샘플을 이용해 새 정책의 advantage를 계산할 수 있다. 따라서 정책 변화가 작다는 제한조건에서 이 advantage를 최대화하도록 정책 파라미터를 찾으면 된다.
 - p14: more convenient bound
   - 제한조건을 total variation distance 대신 KL-divergence를 쓰면 더 편리하다.
   - 즉 두 정책의 KL-divergence를 제한조건으로 두고 advantage를 최대화하는 policy를 찾는다.
