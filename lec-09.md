@@ -25,7 +25,7 @@
     즉 상태 $s_t$에서 행동 $a_t$를 하고 이후에는 정책 $\pi$에 따라 행동할 때,
     행동 $a_t$으로 인한 가치 증가를 의미한다.
   - 식을 풀어 써보면 $J(\theta')-J(\theta)=$
-    $E[A_\pi(s_0,a_0)+\gamma A_\pi(s_1,a_1)+\gamma^2 A_\pi(s_2,a_2)+...]$,
+    $E[A_\pi(s_0,a_0)+\gamma A_\pi(s_1,a_1)+\gamma^2 A_\pi(s_2,a_2)+...]$, where
     $s_t~p_{\theta'}, a_t~\pi_{\theta'}$
   - 따라서 기대값은 new policy, advantage는 old policy를 따른다!
 - p6: distribution mismatch
