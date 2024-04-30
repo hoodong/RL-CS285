@@ -45,7 +45,7 @@
 - p22: natural gradient의 learning rate? (Lagrange multiplier 이용)
   - $\max\limits_\theta'\nabla J(\theta)^T (\theta'-\theta)$
     s.t. $\frac{1}{2}(\theta'-\theta)^T\mathbf{F}(\theta'-\theta)$
-  - Largangian: $L(\theta',\lambda)=J(\theta)^T (\theta'-\theta)
+  - Largangian $L(\theta',\lambda)=J(\theta)^T (\theta'-\theta)
     \lambda\left[\frac{1}{2}(\theta'-\theta)^T\mathbf{F}(\theta'-\theta)-\epsilon\right]$  
     - $\frac{\partial L}{\partial \theta'}=J(\theta)-\lambda\mathbf{F}(\theta'-\theta)=0$
     $\rightarrow\theta'-\theta=\frac{1}{\lambda}\mathbf{F}^{-1}\nabla J(\theta)$  
