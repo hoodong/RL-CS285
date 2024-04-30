@@ -43,7 +43,7 @@
   - $\bar{A}(\theta')\approx \nabla_\theta \bar{A}(\theta')^T (\theta'-\theta)$
   - $\bar{A}(\theta')=\bar{A}(\theta)$: policy gradient 유도와 동일
 - p22: natural gradient의 learning rate? (Lagrange multiplier 이용)
-  - $\max_\theta'\nabla J(\theta)^T (\theta'-\theta)$
+  - $\max\limits_\theta'\nabla J(\theta)^T (\theta'-\theta)$
     s.t. $\frac{1}{2}(\theta'-theta)^T\mathbf{F}(\theta'-theta)$
   - $L(\theta',\lambda)=J(\theta)^T (\theta'-\theta)
     \lambda[\frac{1}{2}(\theta'-theta)^T\mathbf{F}(\theta'-theta)-\epsilon]$  
