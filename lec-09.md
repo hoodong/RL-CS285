@@ -19,7 +19,7 @@
     $\pi'(a_t|s_t)=0$ otherwise
 - p4: 두 번째 등식이 성립하는 이유는?
   - $J(\theta) = E_{\tau\sim p_{\theta'}(\tau)}[V^{\pi_\theta}(s_0)]$  
-    - trajectory는 new policy를 따르고, value fuction은 old function을 따른다는 것은 서로 모순되는 것 같음!
+  - trajectory는 new policy를 따르고, value fuction은 old function을 따른다는 것은 서로 모순되는 것 같음!
 - p5: policy gradient as policy iteration?  
   - $J(\theta')-J(\theta)=E_{\tau\sim p_\theta'} \left[ \sum_t \gamma^t A^{\pi_\theta} (s_t,a_t)\right]$
   - p4 질문과 마찬가지로 advantage는 new policy를 따르고, trajectory는 old policy를 따른다는 것이 무슨 뜻인지?
