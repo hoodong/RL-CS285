@@ -14,7 +14,7 @@
     $\theta \leftarrow \theta + \alpha\nabla_\theta J(\theta)$  
     $\nabla_\theta J(\theta)\approx\frac{1}{N}\sum\limits_{i=1}^{N}\sum\limits_{t=1}^{T}
     \nabla_\theta \log \pi_\theta (a_{i,t}|s_{i,t}) \hat{A}^\theta (x_t,u_t)$
-  - policy iteration
+  - policy iteration  
     $\pi'(a_t|s_t)=1$ if $a_t=\arg\max_{a_t}A^\pi(s_t,a_t)$
 - p4: 두 번째 등식이 성립하는 이유는?
   - $J(\theta) = E_{\tau\sim p_{\theta'}(\tau)}[V^{\pi_\theta}(s_0)]$  
