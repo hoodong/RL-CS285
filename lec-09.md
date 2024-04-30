@@ -47,10 +47,11 @@
     s.t. $\frac{1}{2}(\theta'-\theta)^T\mathbf{F}(\theta'-\theta)$
   - $L(\theta',\lambda)=J(\theta)^T (\theta'-\theta)
     \lambda\left[\frac{1}{2}(\theta'-\theta)^T\mathbf{F}(\theta'-\theta)-\epsilon\right]$  
-    - $\frac{\partial L}{\partial \theta'}=J(\theta)-\lambda\mathbf{F}(\theta'-\theta)=0$:
-    $\theta'-\theta=\frac{1}{\lambda}\mathbf{F}^{-1}\nabla J(\theta)$  
-    - $\frac{\partial L}{\partial \lambda}=\frac{1}{2}(\theta'-\theta)^T\mathbf{F}(\theta'-\theta)-\epsilon=0$,
-    $\frac{1}{2\lambda^2}\nabla J(\theta)^T \mathbf{F}^{-1}\nabla J(\theta)=\epsilon$
+    - $\frac{\partial L}{\partial \theta'}=J(\theta)-\lambda\mathbf{F}(\theta'-\theta)=0$
+    $\rightarrow\theta'-\theta=\frac{1}{\lambda}\mathbf{F}^{-1}\nabla J(\theta)$  
+    - $\frac{\partial L}{\partial \lambda}
+      =\frac{1}{2}(\theta'-\theta)^T\mathbf{F}(\theta'-\theta)-\epsilon=0$,
+    $\rightarrow\frac{1}{2\lambda^2}\nabla J(\theta)^T \mathbf{F}^{-1}\nabla J(\theta)=\epsilon$
     
     
     
