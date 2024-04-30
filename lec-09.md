@@ -34,7 +34,7 @@
   - 여기서 두 분포의 절대값은 total variation distance를 의미한다.
 - p12: 지금까지 정리하면
   - $\theta'\leftarrow \arg\max_{\theta'}\sum_t \bar{A}(\theta)$
-    s.t. $|\pi_{\theta'}-\pi_\theta| \le \epsilion$
+    s.t. $|\pi_{\theta'}-\pi_\theta| \le \epsilon$
 - p14: more convenient bound
   - 제한조건을 total variation distance 대신 KL-divergence를 쓰면 더 편리하다.
   - 즉 두 정책의 KL-divergence를 제한조건으로 두고 advantage를 최대화하는 policy를 찾는다.
