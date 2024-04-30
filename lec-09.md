@@ -10,7 +10,7 @@
 - p3: policy gradient vs. policy iteration
   - step 1: advatage 추정 $\hat{A}^\theta (s_t,a_t)$
   - step 2: policy 업데이트
-  - policy gradient
+  - policy gradient  
     $\theta \leftarrow \theta + \alpha\nabla_\theta J(\theta)$  
     $\nabla_\theta J(\theta)\approx\frac{1}{N}\sum\limits_{i=1}^{N}\sum\limits_{t=1}^{T}
     \nabla_\theta \log \pi_\theta (a_{i,t}|s_{i,t}) \hat{A}^\theta (x_t,u_t)$
