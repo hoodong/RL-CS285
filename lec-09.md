@@ -52,7 +52,7 @@
   - $\nabla_\theta\bar{A}(\theta')=\nabla_\theta J(\theta)$: policy gradient와  동일 (lec-6, p5)
   - 여기서 $J(\theta)$의 정의는?
 - p22: natural gradient의 learning rate?
-  - $\max\limits_\theta'\nabla J(\theta)^T (\theta'-\theta)$
+  - $\max\limits_{\theta'}\nabla J(\theta)^T (\theta'-\theta)$
     s.t. $\frac{1}{2}(\theta'-\theta)^T\mathbf{F}(\theta'-\theta)$
   - Lagrange multiplier 이용하면   
     $\max\limits_{\theta',\lambda}L(\theta',\lambda)=\max\limits_{\theta',\lambda} J(\theta)^T (\theta'-\theta)
