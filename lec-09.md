@@ -27,9 +27,10 @@
   - advatage $A_\pi (s_t,a_t)$는 행동가치 $Q_\pi(s_t,a_t)$와 상태가치 $V_\pi(s_t)$의 차이로 정의된다.
     즉 상태 $s_t$에서 행동 $a_t$를 하고 이후에는 정책 $\pi$에 따라 행동할 때,
     행동 $a_t$으로 인한 가치 증가를 의미한다.
-  - 식을 풀어 써보면 $J(\theta')-J(\theta)=$
+  - 주어진 식을 풀어 써보면 $J(\theta')-J(\theta)=$
     $E_{\pi'}[A_\pi(s_0,a_0)+\gamma A_\pi(s_1,a_1)+\gamma^2 A_\pi(s_2,a_2)+...]$
-  - 따라서 기대값은 new policy, advantage는 old policy를 따른다!
+    따라서 $A_\pi(s_t,a_t)$ 계산에서 $a_t$는 새 정책 \pi_{theta'}, $a_{t+1},a_{t+2},...$는 이전 정책 \pi_{theta}을 따른다.
+  - 요약하면 기대값은 new policy, advantage는 old policy를 따른다!
 - p6: distribution mismatch
   - 근사: $J(\theta')-J(\theta)\approx\bar{A}(\theta')$ : old policy의 샘플로 계산한 new policy의 advantage
   - 가정: $\pi_{\theta'}\approx\pi_{\theta} \rightarrow p_{\theta'}(s_t)\approx p_{\theta}(s_t)$
