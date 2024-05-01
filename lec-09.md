@@ -18,8 +18,8 @@
 - p4: 아래 식이 성립하는 이유는?
   - $E_{s_0\sim p(s_0)}[V^{\pi_\theta}(s_0)] = E_{\tau\sim p_{\theta'}(\tau)}[V^{\pi_\theta}(s_0)]$  
   - trajectory는 new policy를 따르고, value fuction은 old function을 따른다?
-  - 왜냐하면 $V^{\pi_\theta}(s_0)$에서 random한 부분은 $s_0$ 뿐이므로 $a_t$가 어떤 정책이든 기대값 계산에 영향을 주지 않는다.
-    즉, $a_t$의 정책에 상관없이 $E_{s_0}[V^{\pi_\theta}(s_0)]=E_{s_0,a_0,s_1,...}[V^{\pi_\theta}(s_0)]$이 성립한다.   
+  - 왜냐하면 $V^{\pi_\theta}(s_0)$에서 random한 부분은 $s_0$ 뿐이므로 $a_t$가 어떤 정책이든 기대값 계산에 영향을 주지 않는다.  
+    즉, 정책에 상관없이 $E_{s_0}[V^{\pi_\theta}(s_0)]=E_{s_0,a_0,s_1,...}[V^{\pi_\theta}(s_0)]$이 성립한다.   
     강의자료에서는 수식 전개를 위해 $a_t$가 new policy를 따른다고 가정했다.
 - p5: 기대값은 새 정책, advantage는 이전 정책? 
   - $J(\theta')-J(\theta)=E_{\tau\sim p_\theta'} \left[ \sum_t \gamma^t A^{\pi_\theta} (s_t,a_t)\right]$
