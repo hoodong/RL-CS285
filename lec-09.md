@@ -18,6 +18,7 @@
 - p4: 두 번째 등식이 성립하는 이유는?
   - $J(\theta) = E_{\tau\sim p_{\theta'}(\tau)}[V^{\pi_\theta}(s_0)]$  
   - trajectory는 new policy를 따르고, value fuction은 old function을 따른다?
+  - $E_{s_0}[V^{\pi_\theta}(s_0)]=E_{s_0,a_0,s_1,...}[V^{\pi_\theta}(s_0)]$
 - p5: 기대값은 새 정책, advantage는 이전 정책? 
   - $J(\theta')-J(\theta)=E_{\tau\sim p_\theta'} \left[ \sum_t \gamma^t A^{\pi_\theta} (s_t,a_t)\right]$
   - advantage는 old policy를 따르고, trajectory는 new policy를 따른다는 것이 무슨 뜻인지?
