@@ -46,9 +46,9 @@
   - 제한조건을 TV-distance 대신 KL-divergence를 쓰면 더 편리하다.
   - 참고: $d_{TV}(p,q) \le \sqrt{\frac{1}{2}D_{KL}(p||q)}$
   - 즉 두 정책의 KL-divergence를 제한조건으로 두고 advantage를 최대화하는 policy를 찾는다.
-- p18-p19: 목적함수를 근사
+- p18-p19: 목적함수의 근사
   - $\theta'$의 advantage를 $\theta$에서 1차 테일러 근사 (선형화)
-  - $\bar{A}(\theta')\approx \nabla_\theta \bar{A}(\theta')^T (\theta'-\theta)$
+  - $\bar{A}(\theta')\approx \nabla_\theta \bar{A}(\theta)^T (\theta'-\theta)$
   - $\nabla_\theta\bar{A}(\theta')=\nabla_\theta J(\theta)$: policy gradient와  동일 (lec-6, p5)
   - 여기서 $J(\theta)$의 정의는?
 - p22: natural gradient의 learning rate?
