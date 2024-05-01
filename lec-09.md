@@ -29,7 +29,7 @@
     행동 $a_t$으로 인한 가치 증가를 의미한다.
   - 주어진 식을 풀어 써보면 $J(\theta')-J(\theta)=$
     $E_{\pi'}[A_\pi(s_0,a_0)+\gamma A_\pi(s_1,a_1)+\gamma^2 A_\pi(s_2,a_2)+...]$  
-    따라서 $A_\pi(s_t,a_t)$ 계산시 현재행동 $a_t$는 새 정책을 따르고, 이후 행동 $\pi'$, $a_{t+1},a_{t+2},...$는 이전 정책을 따른다.
+    따라서 $A_\pi(s_t,a_t)$ 계산시 현재 행동 $a_t$는 새 정책을 따르고, 이후 행동 $a_{t+1},a_{t+2},...$는 이전 정책을 따른다.
   - 요약하면 기대값은 new policy, advantage는 old policy를 따른다!
 - p6: distribution mismatch
   - 근사: $J(\theta')-J(\theta)\approx\bar{A}(\theta')$ 기대값 계산에서 새 정책의 분포 대신 기존 정책의 분포를 사용 
