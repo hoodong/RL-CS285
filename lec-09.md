@@ -55,8 +55,9 @@
   - $\max\limits_{\theta'}\nabla J(\theta)^T (\theta'-\theta)$
     s.t. $\frac{1}{2}(\theta'-\theta)^T\mathbf{F}(\theta'-\theta)$
   - Lagrange multiplier 이용하면   
-    $\max\limits_{\theta',\lambda}L(\theta',\lambda)=\max\limits_{\theta',\lambda} J(\theta)^T (\theta'-\theta)
-    \lambda\left[\frac{1}{2}(\theta'-\theta)^T\mathbf{F}(\theta'-\theta)-\epsilon\right]$  
+    $\max\limits_{\theta',\lambda}L(\theta',\lambda)=
+    \max\limits_{\theta',\lambda} J(\theta)^T (\theta'-\theta)
+    -\lambda\left[\frac{1}{2}(\theta'-\theta)^T\mathbf{F}(\theta'-\theta)-\epsilon\right]$  
     - $\frac{\partial L}{\partial \theta'}=J(\theta)-\lambda\mathbf{F}(\theta'-\theta)=0$
     $\rightarrow\theta'-\theta=\frac{1}{\lambda}\mathbf{F}^{-1}\nabla J(\theta)$  
     - $\frac{\partial L}{\partial \lambda}
