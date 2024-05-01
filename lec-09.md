@@ -16,7 +16,7 @@
     $\pi'(a_t|s_t)=1$ if $a_t=\arg\max_{a_t}A^\pi(s_t,a_t)$  
     $\pi'(a_t|s_t)=0$ otherwise
 - p4: 아래 식이 성립하는 이유는?
-  - $E_{s_0}[V^{\pi_\theta}(s_0)] = E_{\tau\sim p_{\theta'}(\tau)}[V^{\pi_\theta}(s_0)]$  
+  - $E_{s_0\sim p(s_0)}[V^{\pi_\theta}(s_0)] = E_{\tau\sim p_{\theta'}(\tau)}[V^{\pi_\theta}(s_0)]$  
   - trajectory는 new policy를 따르고, value fuction은 old function을 따른다?
   - $E_{s_0}[V^{\pi_\theta}(s_0)]=E_{s_0,a_0,s_1,...}[V^{\pi_\theta}(s_0)]$
 - p5: 기대값은 새 정책, advantage는 이전 정책? 
