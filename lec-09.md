@@ -32,7 +32,7 @@
     따라서 $A_\pi(s_t,a_t)$ 계산에서 $a_t$는 새 정책 $\pi'$, $a_{t+1},a_{t+2},...$는 이전 정책 $\pi$을 따른다.
   - 요약하면 기대값은 new policy, advantage는 old policy를 따른다!
 - p6: distribution mismatch
-  - 근사: $J(\theta')-J(\theta)\approx\bar{A}(\theta')$ : state prob에 새 정책 대신 기존 정책을 사용해서 계산
+  - 근사: $J(\theta')-J(\theta)\approx\bar{A}(\theta')$ 기대값 계산에서 새 정책의 분포 대신 기존 정책의 분포를 사용 
   - 가정: $\pi_{\theta'}\approx\pi_{\theta} \rightarrow p_{\theta'}(s_t)\approx p_{\theta}(s_t)$
     정책이 비슷하면 분포도 비슷하다!
 - p11: bounding distributional mismatch
