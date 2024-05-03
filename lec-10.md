@@ -57,7 +57,7 @@
   - TreePolicy는 UCT(upper confidence bounding tree)를 사용한다
     - UCT는 confidence interval의 upper bound를 계산한다. (by Hoeffding's inequality)
   - 일반적인 MC control과 MCTS의 차이점이 무엇인지?
-    - root node에서 rollout 하지 않고 leaf node에서 rollout하는 이유는?
+    - 바로 다음 노드에서 rollout하지 않고 leaf node에서 rollout하는 이유는?
   - selection과 expaction의 차이?
     - selction은 leaf node 선택(?), expansion은 새 노드 생성
     - selection만 하고 expanstion은 하지 않는 경우는 없을까?  
