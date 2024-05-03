@@ -17,8 +17,8 @@
   - planning 과 control의 차이?
   - prediction과 control의 차이?
 - open-loop와 closes-loop planning의 차이?
-  - open-loop planning: a sequency of actions 
-  - close-loop planning: mapping from states to actions
+  - open-loop planning: a sequency of actions (open-loop policy)
+  - close-loop planning: mapping from states to actions (closed-loop policy)
 - 환경의 transition dynamic을 아는 경우
   - deterministic case?  
   - stochastic open-loop case?
