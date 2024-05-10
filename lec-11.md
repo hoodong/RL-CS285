@@ -27,3 +27,8 @@
     - 5.append (s,a,s') to dataset
     - repeat step 3~5
   - repeat step 2~5
+- p9: version 1.0과 version 1.5의 차이?
+  - step 3-5를 보면 replan 과정에서 dynamics f(s,a)가 변하지 않는다. 그러면 version 1.0과 차이가 무엇일까?
+  - f(s,a)가 변하지 않으면 replan 결과가 동일하지 않을까? 달라진다!
+  - 왜냐하면 version 1.0은 모델에서 얻은 s'로 planning 하지만, vesion 1.5는 환경에서 얻은 s'로 planning 한다.
+ 
