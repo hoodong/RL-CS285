@@ -19,7 +19,7 @@
   - 3.plan through model to choose actions
   - 4.execute those actions and add the resulting data to dataset
   - repeat step 2~4
- - p8: version 1.5 (+MPC)
+ - p8: version 1.5 (+MPC)  
   - 1.run base policy to collect dataset {(s,a,s')}
   - 2.learn dynamic model f(s,a) to minimize mse loss
   - 3.plan through f(s,a) to choose actions
