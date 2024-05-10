@@ -31,4 +31,11 @@
   - step 3-5를 보면 replan 과정에서 dynamics f(s,a)가 변하지 않는다. 그러면 version 1.0과 차이가 무엇일까?
   - f(s,a)가 변하지 않으면 replan 결과가 동일하지 않을까? 달라진다!
   - 왜냐하면 version 1.0은 모델에서 얻은 s'로 planning 하지만, vesion 1.5는 환경에서 얻은 s'로 planning 한다.
+- MPC (https://www.mathworks.com/help/mpc/gs/what-is-mpc.html)
+  - Model predictive control (MPC) is an optimal control technique in which the calculated control actions minimize a cost function for a constrained dynamical system over a finite, receding, horizon.
+  - At each time step, an MPC controller receives or estimates the current state of the plant.
+  - It then calculates the sequence of control actions that minimizes the cost over the horizon by solving a constrained optimization problem that relies on an internal plant model and depends on the current system state.
+  - The controller then applies to the plant only the first computed control action, disregarding the following ones.
+  - In the following time step the process repeats.
+
  
