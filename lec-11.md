@@ -25,8 +25,8 @@
     - 3.plan through f(s,a) to choose actions
     - 4.execute the first planned action, observe resulting state s' (MPC)
     - 5.append (s,a,s') to dataset
-    - repeat step 3~5
-  - repeat step 2~5
+    - repeat step 3~5 (replan)
+  - repeat step 2~5 (learn dynamics)
 - p9: version 1.0과 version 1.5의 차이?
   - step 3-5를 보면 replan 과정에서 dynamics f(s,a)가 변하지 않는다. 그러면 version 1.0과 차이가 무엇일까?
   - f(s,a)가 변하지 않으면 replan 결과가 동일하지 않을까? 달라진다!
