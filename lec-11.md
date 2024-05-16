@@ -44,6 +44,7 @@
   - Mb로만 계속 학습하면? 그래프에서는 Mb로 시작해서 중간에 Mf로 바꿈
   - Mb+Mf와 Mf를 비교할 때 x축 시작지점이 동일해야 하지 않을까?
 - Half Cheetah
+  - https://www.gymlibrary.dev/environments/mujoco/half_cheetah/
   - The HalfCheetah is a 2-dimensional robot consisting of 9 links and 8 joints connecting them (including two paws).
   - The goal is to apply a torque on the joints to make the cheetah run forward (right) as fast as possible, with a positive reward allocated based on the distance moved forward and a negative reward allocated for moving backward.
   - The torso and head of the cheetah are fixed, and the torque can only be applied on the other 6 joints over the front and back thighs (connecting to the torso), shins (connecting to the thighs) and feet (connecting to the shins).
