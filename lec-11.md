@@ -37,9 +37,9 @@
   - It then calculates the sequence of control actions that minimizes the cost over the horizon by solving a constrained optimization problem that relies on an internal plant model and depends on the current system state.
   - The controller then applies to the plant only the first computed control action, disregarding the following ones.
   - In the following time step the process repeats.
-- p11: performance gap (Half Cheetah)
-  - Nagabandi 2018 (ICRA 2018)
+- p11: performance gap (Half Cheetah)  
   - model-based(Mb) vs. model-free(Mf) vs. Mb-Mf
+  - REF: Nagabandi 2018 (ICRA 2018), Mb는 MPC, Mf는 TRPO 사용
   - cumulative reward 그래프를 해석하는 방법 (클수록 좋은지?)
   - Mb와 Mf의 y축 시작지점이 다른 이유는?
   - Mb로만 계속 학습하면? asymptotic 성능이 Mf보다 낮음!
