@@ -41,5 +41,6 @@
   - cumulative reward 그래프를 해석하는 방법 (클수록 좋은지?)
   - model-based(Mb)는 y축 0 근처에서 시작하지만, model-free(Mf)는 -500 근처에서 시작?
   - Mb로만 계속 학습하면? 그래프에서는 Mb로 시작해서 중간에 Mf로 바꿈
+  - Mb+Mf와 Mf를 비교할 때 시작지점이 동일해야 하지 않을까? 
 
  
