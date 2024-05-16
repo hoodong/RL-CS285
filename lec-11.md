@@ -42,8 +42,8 @@
   - model-based(Mb) vs. model-free(Mf) vs. Mb-Mf
   - cumulative reward 그래프를 해석하는 방법 (클수록 좋은지?)
   - Mb와 Mf의 y축 시작지점이 다른 이유는?
-  - Mb로만 계속 학습하면? 그래프에서는 Mb로 시작해서 중간에 Mf로 바꿈
-  - Mb+Mf와 Mf를 비교할 때 x축 시작지점이 동일해야 하지 않을까?
+  - Mb로만 계속 학습하면? asymptotic 성능이 Mf보다 낮음!
+  - Mb+Mf와 Mf를 비교할 때 x축 시작지점이 동일해야 하지 않을까? Mb+Mfdptj Mb 부분이 ver 1.5 알고리즘(DAgger & MPC)이라면 sample을 사용하고 있으므로 공정한 비교가 아닌 것 같다?
   - Mb는 Mf보다 sample efficiency는 더 높지만, model bias 때문에 asymptotic 성능은 더 낮음. 이 논문에서는 Mb를 이용해 Mf를 초기화하여 sample efficiency를 높임
 - Half Cheetah
   - https://www.gymlibrary.dev/environments/mujoco/half_cheetah/
