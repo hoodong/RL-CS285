@@ -38,8 +38,8 @@
   - The controller then applies to the plant only the first computed control action, disregarding the following ones.
   - In the following time step the process repeats.
 - p11: performance gap graph
-  - graph에서 y축에 있는 cumulative reward를 보는 방법 (클수록 좋은지, )
+  - cumulative reward 그래프를 해석하는 방법 (클수록 좋은지?)
   - model-based(Mb)는 y축 0 근처에서 시작하지만, model-free(Mf)는 -500 근처에서 시작?
-  - Mb로 계속 학습하면? 그래프에서는 Mb로 시작해서 중간에 Mf로 변경한다.
+  - Mb로만 계속 학습하면? 그래프에서는 Mb로 시작해서 중간에 Mf로 바꿈
 
  
