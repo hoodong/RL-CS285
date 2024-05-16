@@ -44,7 +44,7 @@
   - Mb와 Mf의 y축 시작지점이 다른 이유는?
   - Mb로만 계속 학습하면? 그래프에서는 Mb로 시작해서 중간에 Mf로 바꿈
   - Mb+Mf와 Mf를 비교할 때 x축 시작지점이 동일해야 하지 않을까?
-  - Mb는 Mf보다 sample efficiency는 더 높지만, model bias 때문에 asymptotic 성능은 더 낮음. 이 논문에서는 Mb를 이용해 Mf를 초기화함으로써 sample efficiency를 높임
+  - Mb는 Mf보다 sample efficiency는 더 높지만, model bias 때문에 asymptotic 성능은 더 낮음. 이 논문에서는 Mb를 이용해 Mf를 초기화하여 sample efficiency를 높임
 - Half Cheetah
   - https://www.gymlibrary.dev/environments/mujoco/half_cheetah/
   - The HalfCheetah is a 2-dimensional robot consisting of 9 links and 8 joints connecting them (including two paws).
