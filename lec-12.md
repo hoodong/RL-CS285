@@ -40,6 +40,7 @@
 - p9: 해결책
   - derivative-free(model-free) RL을 사용하자.
   - 여기서 모델은 가상 샘플을 생성하는데 사용한다.
+  - 본질적으로 모델프리 RL을 위한 모델기반 가속화로 볼 수 있다.
 - p11: model-free optimization with model
   - policy gradient가 backprop gradient 보다 안정적이다. (backprop gradient는 많은 Jacobian 곱셈이 필요?)
 - p12: model-based RL with policy gradient (ver 2.5)
