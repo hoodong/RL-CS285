@@ -41,7 +41,7 @@
   - derivative-free(model-free) RL을 사용한다.
   - 여기서 모델은 가상 샘플을 생성하는데 사용한다.
 - p11: model-free optimization with model
-  - policy gradient가 backprop gradient 보다 더 안정적이다. (많은 Jacobian 곱셈이 필요하지 않으므로)
+  - policy gradient가 backprop gradient 보다 더 안정적이다. (backprop gradient는 많은 Jacobian 곱셈이 필요함?)
 - p12: model-based RL with policy gradient (ver 2.5)
   - 학습된 dynamics로부터 샘플을 생성하고 policy gradient를 적용한다.(데이터가 충분하면 policy gradient는 잘 작동한다)
   - 하지만 학습된 모델과 true dynamics의 차이 때문에 오차가 누적되는 문제가 발생한다. 시간이 길어질수록 오차가 커진다. $O(\epsilon T^2)$
