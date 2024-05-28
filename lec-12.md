@@ -18,8 +18,8 @@
   - MPC를 쓰더라도 이 문제는 해결할 수 없다. (시험에 참가하지 않을 것이므로)
   - 이 문제를 해결하려면 closed-loop control을 써야 한다.
 - p4: closed-loop control
-  - 현재상태를 관찰한 후에 정책을 생성한다.
-  - 앞의 예에서 모든 가능한 덧셈 문제에 대한 정답을 주는 정책을 생성할 것이다.
+  - 행동이 아니라 정책을 생성한다.
+  - 앞의 예의 경우에 모든 한자리 덧셈 문제에 대한 답을 계산해 둔다.
   - 따라서 최적 plan은 덧셈 시험에 참가하고 답을 계산하는 것이다.
   - 그러면 어떤 형태의 정책을 써야 할까? global vs local
   - LQR은 open-loop plan 근처에서만 유효한 local 정책이다.
@@ -27,17 +27,18 @@
 - p5: model-based RL v2.0  
   - 학습된 모델이 있을 때 총 보상을 최대화하도록 정책을 학습시켜야 한다.
   - 계산 그래프는 3개의 함수로 구성된다: policy $\pi$, dynamics $f$, reward $r$
-  - $r$은 안다고 가정, $\pi$ 와 $r$은 학습할 신경망, 손실함수는 -누적보상이다.
-  - 각 보상 노드에서 역전파를 수행해 총 보상에 대한 정책 파라미터의 그래디언트를 계산할 수 있다.
+  - 보상함수는 안다고 가정, 정책과 다이나믹은 신경망, 손실함수는 누적보상의 음수이다.
+  - 각 보상 노드에서 역전파를 수행해 정책 파라미터에 대한 누적보상의 그래디언트를 계산한다.
   - ver 1.5와 비교해보면 planning이 정책 학습으로 바뀌었다.
-  - model-free policy gradient와 달리 dynamics가 gradient 계산에 포함된다.(model-based policy gradient)
+  - model-free policy gradient와 달리 다이나믹의 모형이 gradient 계산에 포함된다.(model-based policy gradient)
 - p8: 역전파를 이용해 정책파라미터를 최적화할 때 문제점
-  - 먼저 수행된 행동이 늦게 수행된 행동보다 보상에 더 큰 영향을 준다. (최종 행동은 최종 보상에만 영향을 주지만, 첫 행동은 모든 보상에 영향을 준다.)
-  - 즉, 처음 행동들은 그래디언트가 크고, 마지막 행동들은 그래디언트가 작다. 파라미터 민감도가 다르다 (ill-conditioned problem)
-  - 하지만 여기서는 LQR과 같은 2차 방법을 사용할 수 없다.  왜냐하면 정책 파라미터는 모든 시간 스텝이 결합되어 있기 때문에 동적 프로그래밍을 사용할 수 없다.(?)
-  - 딥러닝 관점에서는 RNN 학습시키는 문제와 비슷하다. (LSTM, transformer)
+  - 먼저 수행된 행동이 늦게 수행된 행동보다 보상에 더 큰 영향을 준다. (최종 행동은 최종 보상에만 영향을 주지만, 첫 행동은 모든 보상에 영향을 미친다.)
+  - 즉, 처음 행동들은 그래디언트가 크고, 마지막 행동들은 그래디언트가 작다. (ill-conditioned problem)
+  - 하지만 여기서는 LQR과 같은 2차 방법을 사용할 수 없다.  왜냐하면 정책 파라미터는 모든 시간스텝과 관련되어 있기 때문에 동적 프로그래밍을 사용할 수 없다.(?)
+  - 딥러닝 관점에서는 RNN을 학습시키는 문제와 비슷하다. (vanishing and exploding gradients)
+  - 하지만 RNN의 LSTM과 같은 방식을 사용할 수는 없다. (왜냐하면 다이나믹을 임의로 선택할 수 없기 때문이다.)
 - p9: 해결책
-  - derivative-free(model-free) RL을 사용한다.
+  - derivative-free(model-free) RL을 사용하자.
   - 여기서 모델은 가상 샘플을 생성하는데 사용한다.
 - p11: model-free optimization with model
   - policy gradient가 backprop gradient 보다 안정적이다. (backprop gradient는 많은 Jacobian 곱셈이 필요?)
