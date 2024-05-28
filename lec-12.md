@@ -36,8 +36,25 @@
   - 먼저 수행된 행동이 늦게 수행된 행동보다 보상에 더 큰 영향을 준다. (최종 행동은 최종 보상에만 영향을 주지만, 첫 행동은 모든 보상에 영향을 준다.)
   - 즉, 처음 행동들은 그래디언트가 크고, 마지막 행동들은 그래디언트가 작다. 파라미터 민감도가 다르다 (ill-conditioned problem)
   - 하지만 여기서는 LQR과 같은 2차 방법을 사용할 수 없다.  왜냐하면 정책 파라미터는 모든 시간 스텝이 결합되어 있기 때문에 동적 프로그래밍을 사용할 수 없다.(?)
-  - 딥러닝 관점에서는 RNN 학습시키는 문제와 비슷하다. (LSTM, transformer)  
--p9: 해결책
+  - 딥러닝 관점에서는 RNN 학습시키는 문제와 비슷하다. (LSTM, transformer)
+- p9: 해결책
   - derivative-free(model-free) RL을 사용한다.
   - 여기서 모델은 가상 샘플을 생성하는데 사용한다.
-
+- p11: model-free optimization with model
+  - policy gradient가 backprop gradient 보다 더 안정적이다. (많은 Jacobian 곱셈이 필요하지 않으므로)
+- p12: model-based RL with policy gradient (ver 2.5)
+  - 학습된 dynamics로부터 샘플을 생성하고 policy gradient를 적용한다.(데이터가 충분하면 policy gradient는 잘 작동한다)
+  - 하지만 학습된 모델과 true dynamics의 차이 때문에 오차가 누적되는 문제가 발생한다. 시간이 길어질수록 오차가 커진다. $O(\eplilon T^2)$
+  - short rollout으로 이 문제를 해결할 수 있다.
+- p15: model-based RL with short rollouts
+  - 데이터셋에서 샘플을 선택하고, 모델을 이용해 short rollout 수행한다.
+  - real 데이터와 model 데이터를 모두 사용해 사용해 정책을 개선한다. (off-policy RL)
+- p18: Dyna 알고리즘 (online Q-learning, model-free RL with model)
+  - 데이터는 $(s,a,s',r)$
+  - 환경과 상호작용을 통해 Q 함수를 업데이트
+  - 리플레이 버퍼에서 샘플링한 데이터로 Q 함수를 업데이트 (여러번 반복)
+- p19: general dyna-style model-based RL
+  - 리플레이 버퍼에서 상태 $s$를 샘플링한다.
+  - 행동 $a$을 선택한다. (버퍼/정책/랜덤)
+  - 모델을 이용해 다음 상태를 시뮬레이션한다. ($s',r$을 생성)
+  - model-free RL로 데이터 $(s,a,s',r)$을 학습한다.
