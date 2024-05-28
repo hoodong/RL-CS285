@@ -28,7 +28,7 @@
 - p5: model-based RL v2.0  
   - 학습된 모델이 있을 때 총 보상을 최대화하도록 정책을 학습시켜야 한다.
   - 계산 그래프는 3개의 함수로 구성된다: policy $\pi$, dynamics $f$, reward $r$
-  - $r$은 안다고 가정, $\pi$ 와 $r$은 학습할 신경망, 손실함수는 $-\sum_t r_t$이다.
+  - $r$은 안다고 가정, $\pi$ 와 $r$은 학습할 신경망, 손실함수는 -누적보상이다.
   - 각 보상 노드에서 역전파를 수행해 총 보상에 대한 정책 파라미터의 그래디언트를 계산할 수 있다.
   - ver 1.5와 비교해보면 planning이 정책 학습으로 바뀌었다.
   - model-free policy gradient와 달리 dynamics가 gradient 계산에 포함된다.(model-based policy gradient)
