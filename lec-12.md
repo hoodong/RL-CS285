@@ -61,4 +61,4 @@
   - model-free RL로 데이터 $(s,a,s',r)$을 학습한다.
 - p21: MBA, MVE, MBPO
   - 이 방법과 p19 Dyna-style의 차이점은? 리플레이 버퍼를 이용해 모델을 학습시킨다.
-  - 이 방법의 장단점은? data efficiency vs. model bias
+  - 이 방법의 장단점은? sample efficiency vs. model bias
