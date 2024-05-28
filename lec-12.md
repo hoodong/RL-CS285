@@ -2,7 +2,7 @@
 
 ## keywords
 - model-free learning with a model
-- Syna-style algorithm
+- Dyna-style algorithm
 - multi-step models & successor representations
 
 
