@@ -7,8 +7,8 @@
 
 ## 질문 및 요약
 - p2: 지난 강의에서는 model-based RL ver 1.5을 다루었다.
-  - 모델 오류를 보정하기 위해 매 시간 스텝마다 replanning을 수행한다.(MPC)
-  - 하지만 open-loop planning을 쓰면 큰 단점이 발생한다.
+  - 모델 오류를 보정하기 위해 매 시간 스텝마다 replanning을 수행한다(MPC).
+  - 하지만 open-loop planning은 단점이 있다.
 - p3: open-loop contol은 최적이 아니다.
   - 예를 들어 간단한 한자리 덧셈 시험을 생각해 보자.
   - 두 가지 연속된 행동을 정해야 한다. 1.시험 참가여부, 2.답안 제출(덧셈 계산)
