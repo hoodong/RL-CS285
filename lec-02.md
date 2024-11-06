@@ -15,7 +15,7 @@
   - Bojarski 2016, End to End Learning for Self-Driving Cars
  
 ## Behavioral cloning이 실패한 이유
-- 데이터의 iid 가정이 성립하지 않음 (의사결정 문제에서는 현재 행동이 다음 상태에 영향을 미치기 때문)
+- 데이터의 iid 가정이 성립하지 않음 (의사결정 문제는 현재 행동이 다음 상태에 영향을 미치기 때문)
 - 따라서 작은 오류가 누적되어 데이터 분포가 달라짐 (전문가는 실수하지 않음)
 - 이 문제를 distributional shift라고 함 (학습 데이터와 테스트 데이터의 분포가 다름)
 - distributional shift에 대한 더 자세한 설명  
